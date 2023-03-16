@@ -89,7 +89,7 @@ labelManual.pack(padx=50,pady=10)
 entryManual = Entry(frameActual, font=15,width=20)
 entryManual.pack()
 
-botonEnviar = Button(frameActual, text = "Enviar entrada manual", command=comprobarEntry,)
+botonEnviar = Button(frameActual, text = "Enviar entrada manual", command=comprobarEntry)
 botonEnviar.config(font=10,width=20,height=2)
 botonEnviar.pack(pady=10)
 
