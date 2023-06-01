@@ -862,7 +862,7 @@ def opc1Huecos():
     scrollHuecos= ttk.Scrollbar(frameHuecos, orient=VERTICAL, command=tabla1Huecos.yview)
     scrollHuecos.pack(side=RIGHT, fill=Y)
     tabla1Huecos.configure(yscrollcommand=scrollHuecos.set)
-    tabla1Huecos.pack(side=LEFT, fill=BOTH, expand=True)
+    tabla1Huecos.pack(fill=BOTH, expand=True)
     
     botonVolver= Button(frameHuecos, text='Volver al Menú', command=menuHuecos)
     botonVolver.config(font=10, width=20, height=2)
