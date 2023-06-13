@@ -25,16 +25,14 @@ def comprobarEntry(entry):
         generarNumerosAleatorios(int(entry))
         
 def generarNumerosAleatorios(entry):
-    # aleatorios.clear()
+    aleatorios.clear()
     creacionFrameAleatorios()
     
     for x in range(entry):
-        # num=round(r.uniform(0,1),5)
-        # aleatorios.append(num)
+        num=round(r.uniform(0,1),5)
+        aleatorios.append(num)
         num=aleatorios[x]
         tablaAleatorios.insert("", index=END, values=[x+1,num])
-    
-    print(aleatorios)
     menuMetodos()
     
         
