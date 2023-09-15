@@ -1,0 +1,26 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+    A DB -1
+    B DB -2
+    C DB ?
+    D DW 10000
+    E DW 5000
+    F DW ?
+.CODE
+MAIN PROC
+    MOV AX,@DATA
+    MOV DS,AX
+
+    MOV AH,A
+    ADD AH,B
+    MOV C,AH
+
+    MOV AX,E
+    SUB AX,D
+    MOV F,AX
+    
+    MOV AH,4CH
+    INT 21H
+MAIN ENDP
+END MAIN
