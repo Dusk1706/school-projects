@@ -1,0 +1,15 @@
+clase MiClase {
+    int x;
+    int y;
+    def metodo() int {
+        x = 10;
+        y = 20;
+        si (x > y) {
+            x = x + 1;
+        }
+        mientras (x < y) {
+            x = x + 1;
+        }
+        return x;
+    }
+}
