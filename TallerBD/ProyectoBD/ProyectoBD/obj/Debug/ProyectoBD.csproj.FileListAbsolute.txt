@@ -1,0 +1,48 @@
+E:\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+E:\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe
+E:\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Form1.resources
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.exe
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.pdb
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Captura.resources
+E:\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Consulta.resources
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Captura.resources
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Consulta.resources
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Form1.resources
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.exe
+C:\Users\dylan\Downloads\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.pdb
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Captura.resources
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Consulta.resources
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Form1.resources
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.exe
+C:\Users\Mr. Pink\Documents\Anita\Tareas Tec\Taller de BD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.pdb
+E:\ProyectoBD\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe.config
+E:\ProyectoBD\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.exe
+E:\ProyectoBD\ProyectoBD\ProyectoBD\bin\Debug\ProyectoBD.pdb
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.AssemblyReference.cache
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Captura.resources
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Consulta.resources
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Form1.resources
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.Properties.Resources.resources
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.GenerateResource.cache
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.csproj.CoreCompileInputs.cache
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.exe
+E:\ProyectoBD\ProyectoBD\ProyectoBD\obj\Debug\ProyectoBD.pdb
