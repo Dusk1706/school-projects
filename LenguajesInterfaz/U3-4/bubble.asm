@@ -1,0 +1,53 @@
+TITLE BUBBLE SORT EN ENSAMBLADR
+.MODEL SMALL
+.STACK 100H
+.DATA
+    ARREGLO DB 10,9,8,7,6,5,4,3,2,1
+.CODE 
+MAIN PROC 
+    MOV AX, @DATA
+    MOV DS, AX
+    
+    LEA BX, ARREGLO
+    MOV CX, 10
+    CALL ORDENA
+    
+    MOV AH, 4CH
+    INT 21H
+MAIN ENDP
+
+ORDENA PROC 
+    PUSH SI
+    PUSH DI
+    PUSH AX
+    PUSH CX
+    
+    XOR DI, DI
+    DEC CX
+CICLO1:
+    MOV SI, DI
+    INC SI
+    PUSH CX
+CICLO2:
+    MOV AL, [BX][DI]
+    CMP AL, [BX][SI]
+    JBE NEXT
+INTERCAMBIA:
+    MOV AL, [BX][SI]
+    XCHG AL, [BX][DI]
+    MOV [BX][SI], AL
+NEXT:
+    INC SI
+    LOOP CICLO2
+    POP CX 
+    INC DI
+    LOOP CICLO1
+    POP CX
+    POP AX
+    POP DI
+    POP SI
+    
+    RET
+ORDENA ENDP
+
+END MAIN

@@ -1,0 +1,257 @@
+TITLE LEE DOS NUMEROS EN BINARIO, LOS SUMA Y DESPLIEGA RESULTADO
+.MODEL SMALL
+.STACK 100H
+.DATA
+    NUM1 DB 0
+    NUM2 DB 0
+    SUMABIN DB 0
+    RESTABIN DB 0
+    MULTIBIN DW 0
+    IMULTIBIN DW 0
+    DIVBIN DW 0
+    IDIVBIN DW 0
+    MSG1 DB 'DAME UN NUMERO BINARIO DE 8 BITS: $'
+    MSG2 DB 10,13,'DAME OTRO NUMERO BINARIO DE 8 BITS: $'
+    MSG3 DB 10,13,'LA suma ES: $'
+    MSG4 DB 10,13,'La resta ES: $'
+    MSG5 DB 10,13,'La multiplicacion sin signo ES: $'
+    MSG6 DB 10,13,'La multiplicacion con signo ES: $'
+    MSG7 DB 10,13,'La division sin signo ES: $'
+    MSG8 DB 10,13,'La division con signo es: $'
+ 
+.CODE
+MAIN PROC
+    MOV AX, @DATA
+    MOV DS, AX
+    
+    ;LEER PRIMER NUMERO
+    LEA DX, MSG1
+    MOV AH, 9
+    INT 21H
+    
+    ;INICIALIZO BH EN CERO
+    XOR BH, BH
+    MOV CX, 8
+    
+CICLO:
+    ;HACER ESPACIO EN BH
+    SHL BH,1
+    ;LEER CHAR
+    MOV AH, 1 
+    INT 21H
+    ;CONVERTIR DE CHAR A NUMERO
+    AND AL, 0FH
+    ;METER A BG
+    OR BH,AL
+    LOOP CICLO
+    MOV NUM1, BH
+    
+    ;desplegar lo que hay en num1
+    MOV CX, 8
+CICLO_DISP:
+    ;INICIALIZO DL EN 0
+    XOR DL, DL
+    ;SACO 1 BIT DE NUM1 Y LO METO A DL
+    ROL NUM1, 1
+    RCL DL, 1
+    ;CONVIERTO DE NUM A CHAR
+    OR DL, 30H
+    MOV AH, 2
+    INT 21H
+    LOOP CICLO_DISP
+  
+   ;LEER PRIMER NUMERO2
+   LEA DX, MSG2
+    MOV AH, 9
+    INT 21H
+    
+    ;INICIALIZO BH EN CERO
+    XOR BH, BH
+    MOV CX, 8
+    
+CICLO2:
+    ;HACER ESPACIO EN BH
+    SHL BH,1
+    ;LEER CHAR
+    MOV AH, 1 
+    INT 21H
+    ;CONVERTIR DE CHAR A NUMERO
+    AND AL, 0FH
+    ;METER A BG
+    OR BH,AL
+    LOOP CICLO2
+    MOV NUM2, BH
+    
+    ;desplegar lo que hay en num1
+    MOV CX, 8
+    
+    ;REALIZAR LA SUMA
+    MOV BH, NUM1
+    ADD BH, NUM2
+    MOV SUMABIN, BH
+    
+    ;DESPLEGAR LA SUMA
+    LEA DX, MSG3
+    MOV AH, 9
+    INT 21H
+    MOV CX, 8
+ 
+    
+    CICLO_DISP2:
+    ;INICIALIZO DL EN 0
+    XOR DL, DL
+    ;SACO 1 BIT DE NUM1 Y LO METO A DL
+    ROL SUMABIN, 1
+    RCL DL, 1
+    ;CONVIERTO DE NUM A CHAR
+    OR DL, 30H
+    
+
+    MOV AH, 2
+    INT 21H
+    LOOP CICLO_DISP2
+    
+        ;REALIZAR LA RESTA
+    MOV BH, NUM1
+    SUB BH, NUM2
+    MOV RESTABIN, BH
+    
+    ;DESPLEGAR LA RESTA
+    LEA DX, MSG4
+    MOV AH, 9
+    INT 21H
+    MOV CX, 8
+    
+    CICLO_DISP3:
+    ;INICIAR DL 0
+    XOR DL, DL
+    ;SACO 1 BIT DE NUM1 Y LO METO A DL
+    ROL RESTABIN, 1
+    RCL DL, 1
+    ;CONVIERTO DE NUM A CHAR
+    OR DL, 30H
+    
+
+    MOV AH, 2
+    INT 21H
+    LOOP CICLO_DISP3
+    
+      
+    ;desplegar lo que hay en num1
+    MOV CX, 8
+    
+    ;REALIZAR LA MULTIPLICACION
+    MOV AL, NUM1
+    MOV BL, NUM2
+    MUL BL
+    MOV MULTIBIN, AX
+    
+    ;DESPLEGAR LA MULTIPLICACION
+    LEA DX, MSG5
+    MOV AH, 9
+    INT 21H
+    MOV CX, 16
+    
+    CICLO_DISP4:
+    ;INICIAR DL 0
+    XOR DL, DL
+    ;SACO 1 BIT DE NUM1 Y LO METO A DL
+    ROL MULTIBIN, 1
+    RCL DL, 1
+    ;CONVIERTO DE NUM A CHAR
+    OR DL, 30H
+    
+
+    MOV AH, 2
+    INT 21H
+    LOOP CICLO_DISP4
+    
+        ;desplegar lo que hay en num1
+    MOV CX, 8
+    
+    ;REALIZAR LA MULTIPLICACION
+    MOV AL, NUM1
+    MOV BL, NUM2
+    IMUL BL
+    MOV IMULTIBIN, AX
+    
+    ;DESPLEGAR LA MULTIPLICACION
+    LEA DX, MSG6
+    MOV AH, 9
+    INT 21H
+    MOV CX, 16
+    
+    CICLO_DISP5:
+    ;INICIAR DL 0
+    XOR DL, DL
+    ;SACO 1 BIT DE NUM1 Y LO METO A DL
+    ROL IMULTIBIN, 1
+    RCL DL, 1
+    ;CONVIERTO DE NUM A CHAR
+    OR DL, 30H
+    
+
+    MOV AH, 2
+    INT 21H
+    LOOP CICLO_DISP5
+    
+    ;REALIZAR DIVISION SIN SIGNO
+    MOV AL, NUM1
+    MOV BL, NUM2
+    MOV AL, BL
+    DIV AL
+    MOV DIVBIN, AX    
+    
+    ;DESPLEGAR LA DIVISION
+    LEA DX, MSG7   
+    MOV AH, 9
+    INT 21H
+    MOV CX, 8
+    
+    
+    CICLO_DISP6:
+    ;INICIAR DL 0
+    XOR DX, DX
+    ;SACO 1 BIT DE NUM1 Y LO METO A DL
+    ROL DIVBIN, 1
+    RCL DX, 1
+    ;CONVIERTO DE NUM A CHAR
+    OR DX, 30H
+    
+
+    MOV AH, 2
+    INT 21H
+    LOOP CICLO_DISP6
+    
+    ;REALIZAR DIVISION SIN SIGNO
+    CBW AL, NUM1
+    CBW BL, NUM2
+    MOV AL, BL
+    IDIV AL
+    MOV IDIVBIN, AX    
+    
+    ;DESPLEGAR LA DIVISION
+    LEA DX, MSG8   
+    MOV AH, 9
+    INT 21H
+    MOV CX, 8
+    
+    
+    CICLO_DISP7:
+    ;INICIAR DL 0
+    XOR DX, DX
+    ;SACO 1 BIT DE NUM1 Y LO METO A DL
+    ROL IDIVBIN, 1
+    RCL DX, 1
+    ;CONVIERTO DE NUM A CHAR
+    OR DX, 30H
+    
+
+    MOV AH, 2
+    INT 21H
+    LOOP CICLO_DISP7
+    
+    MOV AH, 4CH
+    INT 21H
+MAIN ENDP
+    END MAIN

@@ -1,0 +1,57 @@
+TITLE SUMA DOS DIGITOS
+.MODEL SMALL
+.STACK 100H
+.DATA
+    A DB ?
+    B DB ?
+    C DB ?
+    MSG1 DB 10,13,'DAME UN DIGITO:$'
+    MSG2 DB 10,13,'DAME SEGUNDO DIGITO$'
+    MSG3 DB 10,13,'LA SUMA ES :$'
+.CODE
+MAIN PROC
+    MOV AX, @DATA
+    MOV DS, AX
+    
+    ;LEER PRIMER DIGITO
+    LEA DX, MSG1
+    MOV AH, 9
+    INT 21H
+    
+    MOV AH, 1
+    INT 21H
+    
+    AND AL, 0FH
+    MOV A, AL
+    
+    
+   ;LEER SEGUNDO DIGITO
+    LEA DX, MSG2
+    MOV AH, 9
+    INT 21H
+    
+    MOV AH, 1
+    INT 21H
+    
+    AND AL, 0FH
+    MOV B, AL
+   
+    ;EJECUTA SUMA DE DATOS
+    MOV AL, A
+    ADD AL, B
+    MOV C, AL
+    
+    ;DESPLEGAR LA SUMA
+    LEA DX, MSG3
+    MOV AH, 9
+    INT 21H
+    
+    MOV DL, C
+    OR DL, 30H
+    MOV AH, 2
+    INT 21H
+    
+    MOV AH, 4CH
+    INT 21H
+MAIN ENDP
+ END MAIN
