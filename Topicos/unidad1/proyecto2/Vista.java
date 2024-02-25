@@ -27,11 +27,11 @@ import java.awt.GridLayout;
 public class Vista extends JFrame {
     private JPanel panelArriba, panelCentro, panelNumerico;
     private JLabel txtNoTarjeta, txtImporte;
-    private JComboBox<String> opcionesNoTarjeta;
+    private JComboBox<String> cmbOpcionesNoTarjeta;
     private JTextField inputImporte;
     private JPasswordField inputNip;
     private JButton[] tecladoNumerico;
-    private JButton autorizarPago;
+    private JButton btnAutorizarPago;
 
     public Vista() {
         super("Autorizacion de compra");
@@ -57,9 +57,9 @@ public class Vista extends JFrame {
         txtNoTarjeta = new JLabel("No. Tarjeta");
         txtNoTarjeta.setFont(new Font("Arial", Font.BOLD, 20));
 
-        opcionesNoTarjeta = new JComboBox<String>();
-        opcionesNoTarjeta.setPreferredSize(new Dimension(250, 30));
-        opcionesNoTarjeta.addItem("Seleccione");
+        cmbOpcionesNoTarjeta = new JComboBox<String>();
+        cmbOpcionesNoTarjeta.setPreferredSize(new Dimension(250, 30));
+        cmbOpcionesNoTarjeta.addItem("Seleccione");
 
         txtImporte = new JLabel("Importe");
         txtImporte.setFont(new Font("Arial", Font.BOLD, 20));
@@ -68,7 +68,7 @@ public class Vista extends JFrame {
         inputImporte.setPreferredSize(new Dimension(100, 30));
 
         panelArriba.add(txtNoTarjeta);
-        panelArriba.add(opcionesNoTarjeta);
+        panelArriba.add(cmbOpcionesNoTarjeta);
         panelArriba.add(txtImporte);
         panelArriba.add(inputImporte);
 
@@ -88,12 +88,12 @@ public class Vista extends JFrame {
 
         crearPanelNumerico();
         
-        autorizarPago = new JButton("Autorizar");
-        autorizarPago.setPreferredSize(new Dimension(300, 50));
+        btnAutorizarPago = new JButton("Autorizar");
+        btnAutorizarPago.setPreferredSize(new Dimension(300, 50));
         
         panelCentro.add(inputNip, BorderLayout.NORTH);
         panelCentro.add(panelNumerico, BorderLayout.CENTER);
-        panelCentro.add(autorizarPago, BorderLayout.SOUTH);
+        panelCentro.add(btnAutorizarPago, BorderLayout.SOUTH);
 
         add(panelCentro, BorderLayout.CENTER);
     }
@@ -113,7 +113,7 @@ public class Vista extends JFrame {
 
     public void ocultarPanelCentro(String mensaje, int tipo) {
         Rutinas.mensaje(mensaje, tipo);
-        opcionesNoTarjeta.setSelectedIndex(0);
+        cmbOpcionesNoTarjeta.setSelectedIndex(0);
         inputImporte.setText("");
         inputNip.setText("");
         panelCentro.setVisible(false);
@@ -123,12 +123,12 @@ public class Vista extends JFrame {
         return panelCentro;
     }
 
-    public JButton getAutorizarPago() {
-        return autorizarPago;
+    public JButton getBtnAutorizarPago() {
+        return btnAutorizarPago;
     }
 
-    public JComboBox<String> getOpcionesNoTarjeta() {
-        return opcionesNoTarjeta;
+    public JComboBox<String> getCmbOpcionesNoTarjeta() {
+        return cmbOpcionesNoTarjeta;
     }
 
     public JTextField getInputImporte() {

@@ -13,13 +13,16 @@ package unidad1.proyecto2;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import java.util.Set;
 
-public class Controlador implements ActionListener {
+public class Controlador implements ActionListener, ItemListener {
     private Vista vista;
     private Modelo modelo;
 
@@ -28,39 +31,48 @@ public class Controlador implements ActionListener {
         this.modelo = modelo;
         crearEscuchadores();
         llenarComboBox();
+        imprimirCuentas();
     }
 
     private void crearEscuchadores() {
         vista.getInputImporte().addActionListener(this);
         vista.getInputNip().addActionListener(this);
-        vista.getAutorizarPago().addActionListener(this);
+        vista.getBtnAutorizarPago().addActionListener(this);
+
         for (int i = 0; i < 10; i++) {
             vista.getTecladoNumerico()[i].addActionListener(this);
         }
-    }
 
-    private void randomizarTecladoNumerico() {
-        JButton[] teclado = vista.getTecladoNumerico();
-        for (int i = teclado.length - 1; i > 0; i--) {
-            int indiceAleatorio = Rutinas.nextInt(0, i);
-
-            String aux = teclado[i].getText();
-            teclado[i].setText(teclado[indiceAleatorio].getText());
-            teclado[indiceAleatorio].setText(aux);
-        }
+        vista.getCmbOpcionesNoTarjeta().addItemListener(this);
     }
 
     private void llenarComboBox() {
         Set<String> tarjetas = modelo.getCuentas().keySet();
         for (String tarjeta : tarjetas) {
-            vista.getOpcionesNoTarjeta().addItem(tarjeta);
+            vista.getCmbOpcionesNoTarjeta().addItem(tarjeta);
+        }
+    }
+
+    private void imprimirCuentas() {
+        Set<String> tarjetas = modelo.getCuentas().keySet();
+        for (String tarjeta : tarjetas) {
+            System.out.println(tarjeta + " " + modelo.getCuentas().get(tarjeta));
+        }
+    }
+
+    @Override
+    public void itemStateChanged(ItemEvent evt) {
+        if (evt.getStateChange() == ItemEvent.SELECTED) {
+            vista.getPanelCentro().setVisible(false);
+            vista.getInputNip().setText("");
+            vista.getInputImporte().setText("");
         }
     }
 
     @Override
     public void actionPerformed(ActionEvent evt) {
         if (evt.getSource() instanceof JTextField) {
-            if (evt.getSource() == vista.getInputImporte() && validarInputUsuario()) {
+            if (validarInputUsuario()) {
                 randomizarTecladoNumerico();
                 vista.getPanelCentro().setVisible(true);
             }
@@ -68,62 +80,84 @@ public class Controlador implements ActionListener {
         }
 
         JButton aux = (JButton) evt.getSource();
-        if (aux == vista.getAutorizarPago()) {
+        if (aux == vista.getBtnAutorizarPago()) {
             validarAutorizacionPago();
         } else {
-            String nip = vista.getInputNip().getText() + aux.getText();
-            if (nip.length() > 4) {
-                return;
-            }
-            vista.getInputNip().setText(nip);
+            procesarTeclaNumerica(aux);
         }
     }
 
     private boolean validarInputUsuario() {
+        String mensajeError = "Ingrese valores validos";
         try {
             int cantidad = obtenerCantidadRetiro();
             String noTarjeta = obtenerTarjetaSeleccionada();
-
             if (cantidad < 1 || noTarjeta.equals("Seleccione")) {
-                vista.ocultarPanelCentro("Ingrese valores validos", 0);
+                vista.ocultarPanelCentro(mensajeError, JOptionPane.ERROR_MESSAGE);
                 return false;
             }
         } catch (NumberFormatException e) {
-            vista.ocultarPanelCentro("Ingrese valores validos", 0);
+            vista.ocultarPanelCentro(mensajeError, JOptionPane.ERROR_MESSAGE);
             return false;
         }
         return true;
+    }
+
+    private void randomizarTecladoNumerico() {
+        JButton[] teclado = vista.getTecladoNumerico();
+
+        for (int i = teclado.length - 1; i > 0; i--) {
+            int indiceAleatorio = Rutinas.nextInt(0, i);
+            String aux = teclado[i].getText();
+
+            teclado[i].setText(teclado[indiceAleatorio].getText());
+            teclado[indiceAleatorio].setText(aux);
+        }
+    }
+
+    private void procesarTeclaNumerica(JButton boton) {
+        String nip = vista.getInputNip().getText() + boton.getText();
+        if (nip.length() > 4) {
+            return;
+        }
+        vista.getInputNip().setText(nip);
     }
 
     private void validarAutorizacionPago() {
         try {
             String noTarjeta = obtenerTarjetaSeleccionada();
             int nip = obtenerNipIngresado();
-            int cantidad = obtenerCantidadRetiro();
 
             if (modelo.verificarNip(noTarjeta, nip)) {
-                if (modelo.retirarDinero(noTarjeta, cantidad)) {
-                    String mensaje = "Retiro exitoso\n" + obtenerSaldo(noTarjeta);
-                    vista.ocultarPanelCentro(mensaje, 1);
-                } else {
-                    vista.ocultarPanelCentro("No tiene saldo suficiente", 0);
-                }
+                realizarRetiro(noTarjeta);
             } else {
-                vista.ocultarPanelCentro("NIP incorrecto", 0);
+                vista.ocultarPanelCentro("NIP incorrecto", JOptionPane.ERROR_MESSAGE);
             }
         } catch (NumberFormatException e) {
-            vista.ocultarPanelCentro("Ingrese un valor valido", 0);
+            vista.ocultarPanelCentro("Ingrese un valor valido", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private void realizarRetiro(String noTarjeta) {
+        int cantidad = obtenerCantidadRetiro();
+        String mensaje;
+        if (modelo.retirarDinero(noTarjeta, cantidad)) {
+            mensaje = "Retiro exitoso\n" + obtenerSaldo(noTarjeta);
+            vista.ocultarPanelCentro(mensaje, JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            mensaje = "No tiene saldo suficiente\n" + obtenerSaldo(noTarjeta);
+            vista.ocultarPanelCentro(mensaje, JOptionPane.ERROR_MESSAGE);
         }
     }
 
     private String obtenerSaldo(String noTarjeta) {
         return "Saldo restante: " + modelo.getCuentas().get(noTarjeta).getSaldo();
     }
-    
+
     private String obtenerTarjetaSeleccionada() {
-        return (String) vista.getOpcionesNoTarjeta().getSelectedItem();
+        return (String) vista.getCmbOpcionesNoTarjeta().getSelectedItem();
     }
-    
+
     private int obtenerCantidadRetiro() throws NumberFormatException {
         return Integer.parseInt(vista.getInputImporte().getText());
     }

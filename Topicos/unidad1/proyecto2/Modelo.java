@@ -15,11 +15,11 @@ import java.util.HashMap;
 
 public class Modelo {
     private final int NUM_CUENTAS;
-    private HashMap<String, Cuenta> cuentas;
+    private HashMap<String, Tarjeta> cuentas;
 
     public Modelo() {
         NUM_CUENTAS = Rutinas.nextInt(50, 100);
-        cuentas = new HashMap<String, Cuenta>();
+        cuentas = new HashMap<String, Tarjeta>();
         inicializarCuentas();
     }
 
@@ -33,7 +33,7 @@ public class Modelo {
 
     private void inicializarCuentas() {
         for (int i = 0; i < NUM_CUENTAS; i++) {
-            cuentas.put(generarNumeroTarjeta(), new Cuenta());
+            cuentas.put(generarNumeroTarjeta(), new Tarjeta());
         }
     }
 
@@ -48,7 +48,7 @@ public class Modelo {
         return noTarjeta;
     }
 
-    public HashMap<String, Cuenta> getCuentas() {
+    public HashMap<String, Tarjeta> getCuentas() {
         return cuentas;
     }
 

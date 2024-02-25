@@ -11,10 +11,10 @@
 
 package unidad1.proyecto2;
 
-public class Cuenta {
+public class Tarjeta {
     private int saldo, nip;
 
-    public Cuenta() {
+    public Tarjeta() {
         saldo = Rutinas.nextInt(1000, 50000);
         nip = 1234;
     }
@@ -33,6 +33,11 @@ public class Cuenta {
 
     public int getNip() {
         return nip;
+    }
+
+    @Override
+    public String toString() {
+        return "Saldo: " + saldo + " NIP: " + nip;
     }
 
 }
