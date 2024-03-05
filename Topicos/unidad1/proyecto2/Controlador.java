@@ -127,7 +127,7 @@ public class Controlador implements ActionListener, ItemListener {
         try {
             String noTarjeta = obtenerTarjetaSeleccionada();
             int nip = obtenerNipIngresado();
-
+            
             if (modelo.verificarNip(noTarjeta, nip)) {
                 realizarRetiro(noTarjeta);
             } else {

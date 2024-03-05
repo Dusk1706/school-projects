@@ -33,8 +33,16 @@ public class Modelo {
 
     private void inicializarCuentas() {
         for (int i = 0; i < NUM_CUENTAS; i++) {
-            cuentas.put(generarNumeroTarjeta(), new Tarjeta());
+            cuentas.put(generarTarjetaUnica(), new Tarjeta());
         }
+    }
+
+    private String generarTarjetaUnica() {
+        String noTarjeta;
+        do {
+            noTarjeta = generarNumeroTarjeta();
+        } while (cuentas.containsKey(noTarjeta));
+        return noTarjeta;
     }
 
     private String generarNumeroTarjeta() {
