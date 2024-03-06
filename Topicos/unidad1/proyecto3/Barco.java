@@ -12,11 +12,12 @@
 package unidad1.proyecto3;
 
 public class Barco {
-    BodegaBarco bodega;
+    Bodega bodega;
     TanqueCombustible tanque;
 
     public Barco() {
-        bodega = new BodegaBarco();
+        final int capacidadBodegaToneladas = Rutinas.nextInt(60, 90);
+        bodega = new Bodega(capacidadBodegaToneladas);
         tanque = new TanqueCombustible(bodega.getCapacidadToneladas());
     }
 
@@ -59,7 +60,7 @@ public class Barco {
         bodega.setPesoActualKg(0);
     }
 
-    public BodegaBarco getBodega() {
+    public Bodega getBodega() {
         return bodega;
     }
 

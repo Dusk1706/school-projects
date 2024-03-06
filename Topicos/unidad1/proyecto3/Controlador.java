@@ -31,10 +31,20 @@ public class Controlador implements ActionListener {
 
     private void crearInterfaz() {
         vista.crearInterfaz(modelo.getNUM_PUERTOS());
-        vista.crearPuertos(modelo.getPuertos());
+        vista.crearPuertos(getNombrePuertos());
         vista.crearBarcos(modelo.getBarcos(), modelo.getNUM_PUERTOS());
         vista.revalidate();
         vista.crearImagenesBarcos();
+    }
+
+    private String[] getNombrePuertos() {
+        Puerto[] puertos = modelo.getPuertos();
+        int cantidadPuertos = puertos.length;
+        String[] nombrePuertos = new String[cantidadPuertos];
+        for(int i = 0; i < cantidadPuertos; i++) {
+            nombrePuertos[i] = puertos[i].getNombre();
+        }
+        return nombrePuertos;
     }
 
     private void crearEscuchadores() {
@@ -50,7 +60,7 @@ public class Controlador implements ActionListener {
         btn.setEnabled(false);
         
         Barco barco = modelo.getBarco(obtenerIndiceBtnBarco(btn));
-        int puertoDestino = modelo.generarIndiceDestino();
+        int puertoDestino = modelo.generarIndiceDestinoBarco();
 
         new Thread(() -> {
             irAPuertoDestino(barco, puertoDestino);
@@ -68,7 +78,7 @@ public class Controlador implements ActionListener {
         barco.llenarTanque();
         lblPuerto.setIcon(null);
 
-        for (int puerto = 1; puerto < puertoDestino; puerto++) {
+        for (int puerto = 1; puerto <= puertoDestino; puerto++) {
             lblPuerto = vista.getLabelPuerto(indiceBarco, puerto);
             lblPuerto.setIcon(imagen);
             procesoBarco(barco, puerto);
@@ -76,13 +86,13 @@ public class Controlador implements ActionListener {
         }
     }
 
-    private void regresarPuertoInicial(Barco barco, int puertoInicial) {
+    private void regresarPuertoInicial(Barco barco, int puertoDestino) {
         int indiceBarco = obtenerIndiceBarco(barco);
         Icon imagen = vista.getBtnBarco(indiceBarco).getIcon();
         JLabel lblPuerto = vista.getLabelPuerto(indiceBarco, 0);
 
         barco.llenarTanque();
-        for (int puerto = puertoInicial; puerto >= 0; puerto--) {
+        for (int puerto = puertoDestino - 1; puerto >= 0; puerto--) {
             lblPuerto.setIcon(null);
             lblPuerto = vista.getLabelPuerto(indiceBarco, puerto);
             lblPuerto.setIcon(imagen);
@@ -115,18 +125,20 @@ public class Controlador implements ActionListener {
         barco.guardarProductosBodega(pesoProductos);
     }
 
-    private void entregarToneladasPuerto(Barco barco, int puerto) {
+    private void entregarToneladasPuerto(Barco barco, int indicePuerto) {
         int indiceBarco = obtenerIndiceBarco(barco);
-        int toneladasBarco = barco.getBodega().getPesoActualKg() / 1_000;
-
-        JLabel lblPuerto = vista.getLabelPuerto(indiceBarco, puerto);
-
-        int toneladasPuerto = Integer.parseInt(lblPuerto.getText());
-        int toneladasNuevas = toneladasPuerto + toneladasBarco;
-
-        barco.vaciarBodega();
         
-        lblPuerto.setText(String.valueOf(toneladasNuevas));
+        Puerto puerto = modelo.getPuerto(indicePuerto);
+        
+        int pesoActualBodegaBarco = barco.getBodega().getPesoActualKg();
+        puerto.guardarProductosPuerto(pesoActualBodegaBarco);
+        barco.vaciarBodega();        
+
+        JLabel lblPuerto = vista.getLabelPuerto(indiceBarco, indicePuerto);
+
+        int toneladasPuerto = puerto.getBodega().getPesoActualToneladas();
+        lblPuerto.setText(String.valueOf(toneladasPuerto));
+
     }
 
     private int obtenerIndiceBtnBarco(JButton btn) {

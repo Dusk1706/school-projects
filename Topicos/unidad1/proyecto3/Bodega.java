@@ -11,11 +11,11 @@
 
 package unidad1.proyecto3;
 
-public class BodegaBarco {
+public class Bodega {
     private int capacidadToneladas, pesoActualKg; 
 
-    public BodegaBarco() {
-        capacidadToneladas = Rutinas.nextInt(60, 90);
+    public Bodega(int capacidadToneladas) {
+        this.capacidadToneladas = capacidadToneladas;
         pesoActualKg = 0;
     }
 
@@ -45,7 +45,7 @@ public class BodegaBarco {
 
     @Override
     public String toString() {
-        return "BodegaBarco [capacidadToneladas=" + capacidadToneladas + ", pesoActualKg=" + pesoActualKg + "]";
+        return "Bodega [capacidadToneladas=" + capacidadToneladas + ", pesoActualKg=" + pesoActualKg + "]";
     }
 
 }

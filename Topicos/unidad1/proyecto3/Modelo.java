@@ -13,34 +13,52 @@ package unidad1.proyecto3;
 public class Modelo {
     private final int NUM_BARCOS, NUM_PUERTOS;
     private final Barco[] barcos;
-    private final String[] puertos;
+    private final Puerto[] puertos;
 
     public Modelo() {
-        puertos = crearPuertos();
-        
-        NUM_PUERTOS = puertos.length;
-        NUM_BARCOS = Rutinas.nextInt(5, 10);
+        NUM_PUERTOS = getCantidadPuertos();
+        NUM_BARCOS = getCantidadBarcosAleatorio();
 
-        barcos = new Barco[NUM_BARCOS];
-        crearBarcos();
+        puertos = crearPuertos();
+        barcos = crearBarcos();
     }
 
-    public String[] crearPuertos() {
-        return new String[]{ 
-            "Ensenada", "La Paz", "Guaymas", "Topolobampo", 
-            "Mazatlan", "Vallarta", "Manzanillo", "Lazaro"  
+    public int generarIndiceDestinoBarco() {
+        int indiceAleatorio = Rutinas.nextInt(1, puertos.length - 1);
+        return indiceAleatorio;
+    }
+
+    private String[] getNombrePuertos() {
+        return new String[] {
+                "Ensenada", "La Paz", "Guaymas", "Topolobampo",
+                "Mazatlan", "Vallarta", "Manzanillo", "Lazaro"
         };
     }
 
-    public void crearBarcos() {
+    private int getCantidadBarcosAleatorio() {
+        return Rutinas.nextInt(5, 10);
+    }
+
+    private int getCantidadPuertos() {
+        return getNombrePuertos().length;
+    }
+
+    private Puerto[] crearPuertos() {
+        String [] nombrePuertos = getNombrePuertos();
+        Puerto[] puertos = new Puerto[NUM_PUERTOS];
+        
+        for (int i = 0; i < NUM_PUERTOS; i++) {
+            puertos[i] = new Puerto(nombrePuertos[i]);
+        }
+        return puertos;
+    }
+
+    private Barco[] crearBarcos() {
+        Barco[] barcos = new Barco[NUM_BARCOS];
         for (int i = 0; i < NUM_BARCOS; i++) {
             barcos[i] = new Barco();
         }
-    }
-
-    public int generarIndiceDestino() {
-        int indiceAleatorio = Rutinas.nextInt(1, puertos.length - 1);
-        return indiceAleatorio;
+        return barcos;
     }
 
     public Barco getBarco(int i) {
@@ -51,7 +69,11 @@ public class Modelo {
         return barcos;
     }
 
-    public String[] getPuertos() {
+    public Puerto getPuerto(int posicionPuerto) {
+        return puertos[posicionPuerto];
+    }
+
+    public Puerto[] getPuertos() {
         return puertos;
     }
 
