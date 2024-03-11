@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>formulario</title>
+</head>
+
+<body bgcolor="red" background="imagen.jpg">
+    <!--FORM DEFINE EL FORMULARIO-->
+    <!--ACTION ACCION QUE REALIZARA EN FORMULARIO-->
+    <!--METHOD METODO QUE EMPLEAREMOS PARA ENVIAR DATOS GET
+O
+POST-->
+    <form ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi" METHOD=POST>
+        <center>
+            <font color="green">
+                <table border>
+                    <caption align="top">
+                        <h3>FORMULARIO
+                            PARADATOS</h3>
+                    </caption>
+                    <tr>
+                        <td>Nombre:</td>
+                        <!--INPUT DEFINE POR DEFECTO UNA VENTANA DE 20
+                        CARACTERES Y UNA LINEA DE ANCHO-->
+                        <!--TYPE="TEXT" VALOR POR DEFECTO TYPE=PASSWORD
+                        PARA QUE EL VALOR PREDETERMINADO DE LA VENTANA ESTÉ EN
+                        FORMATO OCULTO:-->
+                        <!--NAME DEFINE EL NOMBRE DE LA VENTANA-->
+                        <td> <input type="text" name="nombre" size=18 maxlength=18 value="Nombre Completo"> F.Nac.:
+                            <input type="text" name="edad" size=8 maxlength=8> INE:
+                            <input type="text" name="ine" size=8 maxlength=8>
+                        </td>
+                    <tr>
+                        <td>Apellidos:</td>
+                        <td> <input type="text" name="apellidos" size=48 maxlength=48></td>
+                    <tr>
+                        <td>Calle y número:</td>
+                        <td> <input type="text" name="domicilio" size=48 maxlength=48></td>
+                    <tr>
+                        <td>Código Postal:</td>
+                        <td> <input type="text" name="postal" size=5 maxlength=5>Ciudad:
+                            <input type="text" name="localidad" size=36 maxlength=36>
+                        </td>
+                    <tr>
+                        <td>Estado: </td>
+                        <td> <input type="text" name="estado" size=20 maxlength=20>
+                            Teléfono:
+                            <input type="text" name="telefono" size=19 maxlength=19>
+                        </td>
+                    <tr>
+                        <td>Opción:</td>
+                        <!--SELECT DEFINE UNA LISTA DESPLEGABLE-->
+                        <td> <select name="OPCION">
+                                <option>OPCION 1
+                                <option>OPCION 2
+                                <option>OPCION 3
+                                <option>OPCION 4
+                                <option>OPCION 5
+                            </select>Escoja una opción</td>
+                    <tr>
+                        <td>Comentarios<br> personales:</td>
+                        <!--TEXTAREA PERMITE DEFINIR UN ÁREA DE TEXTO EN LA
+                            PANTALLA-->
+                        <td><textarea name="coment" ROWS=2 COLS=48></textarea></td>
+                    <tr>
+                        <td><B>Pulse aquí:</B></td>
+                        <td alight=CENTER>
+                            <!--TYPE=SUBMIT PARA GENERAR UN BOTÓN QUE AL SER
+                            PULSADO
+                            CIERRA LA CAPTURA DE DATOS DEL FORMULARIO Y
+                            PROCEDE A EJECUTAR
+                            LO DEFINIDO EN EL ATRIBUTO ACTION
+                            QUE YA CONOCEMOS.-->
+                            <!--VALUE=QUE APAREZCA UN VALOR PREDETERMINADO
+                            EN LA
+                            VENTANA-->
+                            <input type="submit" value="Enviar datos ">
+                            <!--TYPE=RESET PARA GENERAR UN BOTÓN QUE AL SER
+                            PULSADO INICIALIZA TODOS LOS COMPONENTES DEL FORMULARIO.-->
+                            <input type="reset" value="Borrar los datos">
+                        </td>
+            </font>
+            </table>
+        </center>
+    </form>
+</body>
+
+</html>
