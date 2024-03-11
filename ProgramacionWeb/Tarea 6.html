@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+	<TITLE>Practica 6 de HTML</TITLE>
+</HEAD>
+
+<BODY>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi">
+		<INPUT NAME="campo1">
+		<INPUT TYPE="submit" VALUE="Procesar">
+	</FORM>
+
+	<FORM> <INPUT SIZE=10 MAXLENGTH=10 NAME="campo1"></FORM>
+
+	<FORM> <INPUT VALUE="HOLA"> </FORM>
+	<FORM> <INPUT TYPE="PASSWORD" VALUE="HOLA"> </FORM>
+	<FORM> <INPUT TYPE="HIDDEN" VALUE="HOLA"> </FORM>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <INPUT NAME="campo1">
+		<INPUT TYPE="SUBMIT" VALUE="Procesar">
+	</FORM>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <INPUT NAME="campo1">
+		<INPUT TYPE="RESET" VALUE="Inicializar">
+	</FORM>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <INPUT TYPE=IMAGE NAME="imagen"
+			SRC="sugeren.gif"> </FORM>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi">
+		<INPUT TYPE="SUBMIT" VALUE="Procesar">
+		<INPUT TYPE="RESET" VALUE="Inicializar">
+		Clase A <INPUT TYPE="RADIO" NAME="clase" VALUE="A">
+		Clase B <INPUT TYPE="RADIO" NAME="clase" VALUE="B">
+	</FORM>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi">
+		<INPUT TYPE="SUBMIT" VALUE="Procesar">
+		<INPUT TYPE="RESET" VALUE="Inicializar">
+		<INPUT TYPE="CHECKBOX" NAME="clase" VALUE="A">
+		<INPUT TYPE="CHECKBOX" NAME="clase" VALUE="B">
+	</FORM>
+	<FORM> <SELECT> </SELECT> </FORM>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi">
+		<INPUT TYPE="SUBMIT" VALUE="Procesar">
+		<INPUT TYPE="RESET" VALUE="Inicializar"> <SELECT NAME="lista1">
+			<OPTION>Valor 1
+			<OPTION>Valor 2
+			<OPTION>Valor 3
+		</SELECT>
+	</FORM>
+
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi">
+		<INPUT TYPE="SUBMIT" VALUE="Procesar"> <INPUT TYPE="RESET" VALUE="Inicializar"> <TEXTAREA NAME="texto1" ROWS=5
+			COLS=40></TEXTAREA>
+	</FORM>
+
+	<TABLE>
+		<TR>
+			<TD>
+				<FORM METHOD="POST" ACTION="indice.htm"> <INPUT TYPE="SUBMIT" VALUE="Indice"> </FORM>
+			</TD>
+			<TD>
+				<FORM METHOD="POST" ACTION="notas.htm"> <INPUT TYPE="SUBMIT" VALUE="Notas"> </FORM>
+			</TD>
+			<TD>
+				<FORM METHOD="POST" ACTION="como.htm"> <INPUT TYPE="SUBMIT" VALUE="Cómo funciona?"> </FORM>
+			</TD>
+		</TR>
+	</TABLE>
+	<TABLE>
+		<TR>
+			<TD>
+				<FORM METHOD="GET" ACTION="http://mecaniza.sestud.uv.es/manual.esp/indice.htm"><INPUT TYPE="SUBMIT"
+						VALUE="Indice"> </FORM>
+			</TD>
+			<TD>
+				<FORM METHOD="GET" ACTION="http://mecaniza.sestud.uv.es/manual.esp/notas.htm"> <INPUT TYPE="SUBMIT"
+						VALUE="Notas"> </FORM>
+			</TD>
+			<TD>
+				<FORM METHOD="GET" ACTION="http://mecaniza.sestud.uv.es/manual.esp/como.htm"> <INPUT TYPE="SUBMIT"
+						VALUE="Cómo funciona?"> </FORM>
+			</TD>
+		</TR>
+	</TABLE>
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <INPUT NAME="campo1"> <INPUT
+			NAME="campo2" SIZE=10 MAXLENGTH=10>
+		<P> <INPUT TYPE="submit" VALUE="Procesar"> <INPUT TYPE="reset" VALUE="Inicializar">
+	</FORM>
+	<form method="POST" action="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <input name="campo1"> <input
+			name="campo2" VALUE="TEXTO VISIBLE"> <input type="password" name="campo3" VALUE="TEXTO OCULTO">
+		<P> <input type="submit" value="Procesar"> <input type="reset" value="Inicializar">
+	</form>
+
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <INPUT NAME="campo1"> <INPUT
+			NAME="campo2" SIZE=10 MAXLENGTH=10>
+		<P> Clase A <INPUT TYPE="RADIO" NAME="clase" VALUE="A"> Clase B <INPUT TYPE="RADIO" NAME="clase" VALUE="B">
+		<P> Tipo 1 <INPUT TYPE="CHECKBOX" NAME="tipo" VALUE="1"> Tipo 2 <INPUT TYPE="CHECKBOX" NAME="tipo" VALUE="2">
+		<P> <INPUT TYPE="SUBMIT" VALUE="Procesar"> <INPUT TYPE="RESET" VALUE="Inicializar">
+	</FORM>
+
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <INPUT TYPE="SUBMIT" VALUE="Procesar">
+		<INPUT TYPE="RESET" VALUE="Inicializar"> <SELECT NAME="lista1">
+			<OPTION>Valor 1
+			<OPTION>Valor 2
+			<OPTION>Valor 3
+		</SELECT>
+	</FORM>
+
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <SELECT NAME="lista1" SIZE=3>
+			<OPTION>Valor 1
+			<OPTION>Valor 2
+			<OPTION>Valor 3
+			<OPTION>Valor 4
+			<OPTION>Valor 5
+		</SELECT>
+		<P> <INPUT TYPE="SUBMIT" VALUE="Procesar"> <INPUT TYPE="RESET" VALUE="Inicializar">
+	</FORM>
+
+	<FORM METHOD="POST" ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi"> <TEXTAREA NAME="texto1" ROWS=5
+			COLS=40></TEXTAREA>
+		<P> <INPUT TYPE="SUBMIT" VALUE="Procesar"> <INPUT TYPE="RESET" VALUE="Inicializar">
+	</FORM>
+	<FORM ACTION="http://mecaniza.sestud.uv.es/cgi-bin/test2-cgi" METHOD=POST>
+		<CENTER>
+			<TABLE BORDER>
+				<TR>
+					<TD>Nombre:</TD>
+					<TD> <INPUT TYPE="text" NAME="nombre" SIZE=18 MAXLENGTH=18> F.Nac.: <INPUT TYPE="text" NAME="edad"
+							SIZE=8 MAXLENGTH=8> DNI: <INPUT TYPE="text" NAME="dni" SIZE=8 MAXLENGTH=8></TD>
+				<TR>
+					<TD>Apellidos:</TD>
+					<TD> <INPUT TYPE="text" NAME="apellidos" SIZE=48 MAXLENGTH=48></TD>
+				<TR>
+					<TD>Calle y número:</TD>
+					<TD> <INPUT TYPE="text" NAME="domicilio" SIZE=48 MAXLENGTH=48></TD>
+				<TR>
+					<TD>Código Postal:</TD>
+					<TD> <INPUT TYPE="text" NAME="postal" SIZE=5 MAXLENGTH=5>Ciudad: <INPUT TYPE="text" NAME="localidad"
+							SIZE=36 MAXLENGTH=36></TD>
+				<TR>
+					<TD>Provincia: </TD>
+					<TD> <INPUT TYPE="text" NAME="provincia" SIZE=20 MAXLENGTH=20> Teléfono: <INPUT TYPE="text"
+							NAME="telefono" SIZE=19 MAXLENGTH=19></TD>
+				<TR>
+					<TD>Opción:</TD>
+					<TD> <SELECT NAME="OPCION">
+							<OPTION>OPCION 1
+							<OPTION>OPCION 2
+							<OPTION>OPCION 3
+							<OPTION>OPCION 4
+							<OPTION>OPCION 5
+						</SELECT>Escoja una opción</TD>
+				<TR>
+					<TD>Comentarios<BR> personales:</TD>
+					<TD> <TEXTAREA NAME="coment" ROWS=2 COLS=48></TEXTAREA></TD>
+					<TD> <TEXTAREA NAME="coment" ROWS=2 COLS=48></TEXTAREA></TD>
+				<TR>
+					<TD><B>Pulse aquí:</B></TD>
+					<TD ALIGN=CENTER> <INPUT TYPE="submit" VALUE="Enviar datos "> <INPUT TYPE="reset"
+							VALUE="Borrar los datos"></TD>
+			</TABLE>
+		</CENTER>
+	</FORM>
+</BODY>
+
+</HTML>
