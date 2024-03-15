@@ -11,6 +11,8 @@
 
 package unidad1.proyecto3;
 
+import unidad1.examen.Rutinas;
+
 public class Barco {
     Bodega bodega;
     TanqueCombustible tanque;
