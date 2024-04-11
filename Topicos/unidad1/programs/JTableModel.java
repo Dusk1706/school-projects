@@ -7,7 +7,7 @@ import java.awt.event.*;
 import java.util.Vector;
 public class JTableModel extends JFrame implements ActionListener{
 
-	JTable tbl;
+	JTable tabla;
 	
 	DefaultTableModel modelo;
 	
@@ -30,14 +30,15 @@ public class JTableModel extends JFrame implements ActionListener{
 		setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
+
 		String [] cols= {"ID","Nombre","Edad (a�os)","Estatura (cm)"};
-		tbl=new JTable();
-		modelo=new DefaultTableModel() ;
+		tabla=new JTable();
+		modelo=new DefaultTableModel();
 		modelo.setColumnIdentifiers(cols);
-		tbl.setModel(modelo);
+		tabla.setModel(modelo);
 		
 		Agrega();
-		JScrollPane sp =new JScrollPane(tbl);
+		JScrollPane sp =new JScrollPane(tabla);
 		add(sp);
 		
 		JPanel panel=new JPanel();
@@ -51,7 +52,7 @@ public class JTableModel extends JFrame implements ActionListener{
 		add(panel,BorderLayout.SOUTH);
 		setVisible(true);
 		
-		Rutinas.Mensaje(tbl.getRowCount()+"<<-- Total de registros en la tabnla "+modelo.getRowCount());
+		// Rutinas.Mensaje(tabla.getRowCount()+"<<-- Total de registros en la tabnla "+modelo.getRowCount());
 	}
 	public void HazEscuchas() {
 		btnMostrar.addActionListener(this);
@@ -77,7 +78,7 @@ public class JTableModel extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if( e.getSource()==btnMostrar) {
-			if(tbl.getSelectedRow()==-1) {
+			if(tabla.getSelectedRow()==-1) {
 				Rutinas.Mensaje("DEBE DE SELECCIOANR UN RENGL�N DE LA TABLA");
 				return;
 			}
@@ -88,12 +89,12 @@ public class JTableModel extends JFrame implements ActionListener{
 			pantalla.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 			pantalla.setLayout(new GridLayout(0,2));
 			
-			txtId=new JTextField(modelo.getValueAt(tbl.getSelectedRow(), 0)+"");
+			txtId=new JTextField(modelo.getValueAt(tabla.getSelectedRow(), 0)+"");
 			txtId.setEnabled(false);
 
-			txtNombre=new JTextField(modelo.getValueAt(tbl.getSelectedRow(), 1)+"");
-			txtEdad=new JTextField(modelo.getValueAt(tbl.getSelectedRow(), 2)+"");
-			txtEstatura=new JTextField(modelo.getValueAt(tbl.getSelectedRow(), 3)+"");
+			txtNombre=new JTextField(modelo.getValueAt(tabla.getSelectedRow(), 1)+"");
+			txtEdad=new JTextField(modelo.getValueAt(tabla.getSelectedRow(), 2)+"");
+			txtEstatura=new JTextField(modelo.getValueAt(tabla.getSelectedRow(), 3)+"");
 			pantalla.add(new JLabel("Id:",JLabel.RIGHT));
 			pantalla.add(txtId);
 			pantalla.add(new JLabel("Nombre:",JLabel.RIGHT));
@@ -120,31 +121,31 @@ public class JTableModel extends JFrame implements ActionListener{
 //			return;
 		}
 		if( e.getSource()==btnBorrar) {
-			if(tbl.getSelectedRow()==-1)
+			if(tabla.getSelectedRow()==-1)
 				return;
 			int resp = JOptionPane.showConfirmDialog(null, "�Est� seguro?");
 			if( resp==0)
-			   modelo.removeRow((int)tbl.getSelectedRow());
+			   modelo.removeRow((int)tabla.getSelectedRow());
 			return;
 		}
 		if( e.getSource()==btnModificar) {
-			if(tbl.getSelectedRow()==-1)
+			if(tabla.getSelectedRow()==-1)
 				return;
-			modelo.setValueAt(9999, (int)tbl.getSelectedRow(), 2);
+			modelo.setValueAt(9999, (int)tabla.getSelectedRow(), 2);
 			return;
 		}
 		if( e.getSource()==	btnModificarDatos) {
 			
-			modelo.setValueAt(txtNombre.getText(), (int)tbl.getSelectedRow(), 1);
-			modelo.setValueAt(txtEdad.getText(), (int)tbl.getSelectedRow(), 2);
-			modelo.setValueAt(txtEstatura.getText(), (int)tbl.getSelectedRow(), 3);
+			modelo.setValueAt(txtNombre.getText(), (int)tabla.getSelectedRow(), 1);
+			modelo.setValueAt(txtEdad.getText(), (int)tabla.getSelectedRow(), 2);
+			modelo.setValueAt(txtEstatura.getText(), (int)tabla.getSelectedRow(), 3);
 			pantalla.setVisible(false);
 			return;
 		}
 		if ( e.getSource()==btnRestaurar) {
-			txtNombre.setText(modelo.getValueAt(tbl.getSelectedRow(), 1)+"");
-			txtEdad.setText(modelo.getValueAt(tbl.getSelectedRow(), 2)+"");
-			txtEstatura.setText(modelo.getValueAt(tbl.getSelectedRow(), 3)+"");	
+			txtNombre.setText(modelo.getValueAt(tabla.getSelectedRow(), 1)+"");
+			txtEdad.setText(modelo.getValueAt(tabla.getSelectedRow(), 2)+"");
+			txtEstatura.setText(modelo.getValueAt(tabla.getSelectedRow(), 3)+"");	
 			
 			return;
 		}
