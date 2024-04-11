@@ -18,8 +18,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import unidad1.examen.Rutinas;
-
 public class Vista extends JFrame {
     private JLabel[] lblPuertos;
     private JButton[] btnBarcos;

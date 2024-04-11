@@ -51,6 +51,7 @@ public class JHint extends JPanel {
         txtInputHint = "";
 
         rbtnFontOriginal = new JRadioButton("Font original");
+        rbtnFontOriginal.setSelected(true);
         rbtnFontOriginal.setForeground(Color.BLUE);
 
         rbtnFontAleatorio = new JRadioButton("Font aleatorio");

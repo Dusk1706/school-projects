@@ -11,7 +11,7 @@ public class Conexion {
   private Connection conn;
 
   public Conexion() {
-    String ip = "192.168.1.74";
+    String ip = "localhost";
     
     url = "jdbc:sqlserver://" + ip +";"+
         "databaseName=Hints;" +

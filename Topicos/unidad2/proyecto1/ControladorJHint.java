@@ -71,7 +71,6 @@ public class ControladorJHint implements ActionListener, ComponentListener, KeyL
         }
 
         String hint = modelo.buscarHint(texto);
-        System.out.println(hint);
         if (hint != null) {
             vista.asignarImagen(hint);
         }else {
@@ -100,7 +99,8 @@ public class ControladorJHint implements ActionListener, ComponentListener, KeyL
     }
 
     private boolean validarCaracter(char caracter) {
-        return Character.isLetter(caracter) || Character.isDigit(caracter) || caracter == ' ';
+        return Character.isLetter(caracter) || Character.isDigit(caracter) 
+        || caracter == ' ' || caracter == '.';
     }
 
 

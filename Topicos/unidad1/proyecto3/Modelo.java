@@ -10,8 +10,6 @@
  */
 package unidad1.proyecto3;
 
-import unidad1.examen.Rutinas;
-
 public class Modelo {
     private final int NUM_BARCOS, NUM_PUERTOS;
     private final Barco[] barcos;

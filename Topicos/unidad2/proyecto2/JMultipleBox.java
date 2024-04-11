@@ -1,6 +1,7 @@
 package unidad2.proyecto2;
 
 import java.awt.Color;
+import java.awt.Font;
 
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
@@ -44,6 +45,7 @@ public class JMultipleBox extends JPanel {
         grupoBotones.add(rbtnTelefonos);
 
         btnNuevaCaja = new JButton("Nueva Caja");
+        btnNuevaCaja.setHorizontalAlignment(JButton.CENTER);
 
         panelCaja = new JPanel();
         panelCaja.setLayout(null);
@@ -187,11 +189,15 @@ public class JMultipleBox extends JPanel {
         int x = getValorPorcentaje(anchoPanel, 5);
         int y = getValorPorcentaje(alturaPanel, 15);
 
-        int ancho = getValorPorcentaje(anchoPanel, 17);
-        int alto = getValorPorcentaje(alturaPanel, 10);
+        int ancho = getValorPorcentaje(anchoPanel, 20);
+        int alto = getValorPorcentaje(alturaPanel, 7);
         
         btnNuevaCaja.setBounds(x, y, ancho, alto);
+        int anchoBtn = btnNuevaCaja.getWidth();
+        int fontTamano = getValorPorcentaje(anchoBtn, 11); 
+        btnNuevaCaja.setFont(new Font("Arial", Font.BOLD, fontTamano));
 
+        ancho = getValorPorcentaje(anchoPanel, 17);
         y = getValorPorcentaje(alturaPanel, 5);
         rbtnCorreos.setBounds(x, y, ancho, alto);
 
@@ -285,6 +291,28 @@ public class JMultipleBox extends JPanel {
 
     public JTextField [] getCajas() {
         return cajas;
+    }
+
+    public String [] getTextCajas() {
+        if (cajas == null) {
+            return null;
+        }
+
+        String [] textos = new String[cajas.length];
+
+        for (int i = 0; i < cajas.length; i++) {
+            textos[i] = cajas[i].getText();
+        }
+
+        return textos;
+    }
+
+    public String getTextCaja(int indice) {
+        if (cajas == null) {
+            return null;
+        }
+
+        return cajas[indice].getText();
     }
 
 }
