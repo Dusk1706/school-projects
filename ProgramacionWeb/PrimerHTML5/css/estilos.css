@@ -1,0 +1,70 @@
+*CSS a Encabezados*/ header h1 {
+  text-shadow: 3px 3px 7px #ffe0e9;
+}
+/*CSS a imagen*/
+header img {
+  float: right;
+  margin-right: 20px;
+  margin-top: -100px;
+  width: 210px;
+}
+/*CSS a Menu/Lista*/
+header nav ul li {
+  background: #ff5594;
+  border-bottom: 3px solid rgba(0, 0, 0, 2);
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 0 10px 0 10px;
+}
+/*CSS a submenu/lista*/
+header nav ul li:hover {
+  background: #ffe0e9;
+  color: purple;
+}
+/*CSS seccion*/
+section {
+  border: 2px solid purple;
+  text-align: center;
+}
+/*CSS articulos*/
+article {
+  border: 2px solid pink;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  vertical-align: top;
+  width: 40%;
+}
+/*CSS cabecera/pie de página*/
+header {
+  border-radius: 5px;
+  background: purple;
+  box-shadow: 3px 5px 4px #ff0080;
+  color: purple;
+  text-align: center;
+}
+/*CSS AL PIE DE PAGINA O FOOTER*/
+footer {
+  border-radius: 5px;
+  background: purple;
+  box-shadow: 3px 5px 4px #ff0080;
+  color: pink;
+  text-align: center;
+}
+/*CSS Titulos*/
+h1 {
+  color: #ff0080;
+  font-size: xx-large;
+  font-family: impact;
+}
+/*CSS fondo*/
+body {
+  background: #ffe0e9;
+}
+/*CSS parrafos*/
+p {
+  color: purple;
+  font-size: medium;
+  font-family: arial;
+  text-align: justify;
+}
