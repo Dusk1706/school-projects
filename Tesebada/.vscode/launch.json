@@ -1,0 +1,96 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "LimpiezaImportacionAutos",
+            "request": "launch",
+            "mainClass": "proyecto2.LimpiezaImportacionAutos",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "LimpiezaSynergy",
+            "request": "launch",
+            "mainClass": "proyecto2.LimpiezaSynergy",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "LimpiezaTicketD",
+            "request": "launch",
+            "mainClass": "proyecto2.LimpiezaTicketD",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "LimpiezaTicketH",
+            "request": "launch",
+            "mainClass": "proyecto2.LimpiezaTicketH",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "unidad3.proyecto1.Main",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "GeneracionXML",
+            "request": "launch",
+            "mainClass": "unidad4.proyecto1.GeneracionXML",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "DOM",
+            "request": "launch",
+            "args": 
+            [
+              "unidad4\\proyecto1\\empresaDom.xml"
+            ], 
+            "mainClass": "unidad4.proyecto1.validaciones.DOM",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "XMLBIENFORMADO",
+            "request": "launch",
+            "args": 
+            [
+              "unidad4\\proyecto1\\empresaDom.xml"
+            ], 
+            "mainClass": "unidad4.proyecto1.validaciones.XMLBIENFORMADO",
+            "projectName": "Tesebada_60459a74"
+        },
+        {
+            "type": "java",
+            "name": "XMLVALIDO",
+            "request": "launch",
+            "args": 
+            [
+              "unidad4\\proyecto1\\empresaDom.xml"
+            ], 
+            "mainClass": "unidad4.proyecto1.validaciones.XMLVALIDO",
+            "projectName": "Tesebada_60459a74"
+        }
+    ]
+}

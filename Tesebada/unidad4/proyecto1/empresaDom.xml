@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa>
+    <personas>
+        <empleados>
+            <empleado codigo = "empleado1">
+                <nombre>Anastacia Zoila Coppel Lopez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>10</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>11</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 28, Colonia 82, Ciudad 48</direccion>
+                <telefono>5099469480</telefono>
+            </empleado>
+            <empleado codigo = "empleado2">
+                <nombre>Carolina Sofia Lopez Perez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>12</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>11</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 7, Colonia 72, Ciudad 82</direccion>
+                <telefono>4260999649</telefono>
+            </empleado>
+        </empleados>
+        <clientes>
+            <cliente codigo = "cliente1">
+                <nombre>Antonio Plutarco Lopez Lopez</nombre>
+                <fecha_nacimiento>                    <fecha>
+                        <dia>03</dia>
+                        <mes>10</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <direccion>Calle 86, Colonia 72, Ciudad 78</direccion>
+                <telefono>9260392380</telefono>
+                <correo>Antonio Plutarco Lopez Lopez@gmail.com</correo>
+            </cliente>
+            <cliente codigo = "cliente2">
+                <nombre>Carolina Zoila Mendoza Coppel</nombre>
+                <fecha_nacimiento>                    <fecha>
+                        <dia>04</dia>
+                        <mes>12</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <direccion>Calle 44, Colonia 80, Ciudad 52</direccion>
+                <telefono>8278834425</telefono>
+            </cliente>
+        </clientes>
+        <proveedores>
+            <proveedor codigo = "proveedor1">
+                <nombre_empresa>Empresa Plutarco Mendoza Urias</nombre_empresa>
+                <contactos>
+                    <contacto>
+                        <nombre>Javier Luis Coppel Garcia</nombre>
+                        <telefono>4523461606</telefono>
+                    </contacto>
+                    <contacto>
+                        <nombre>Luis Antonio Garcia Lopez</nombre>
+                        <telefono>9775992156</telefono>
+                    </contacto>
+                </contactos>
+                <correo>Empresa Plutarco Mendoza Urias@gmail.com</correo>
+            </proveedor>
+            <proveedor codigo = "proveedor2">
+                <nombre_empresa>Empresa Plutarco Urias Mendoza</nombre_empresa>
+                                <contacto>
+                    <nombre>Antonio Javier Diaz Mendoza</nombre>
+                    <telefono>7365007602</telefono>
+                </contacto>
+                <correo>Empresa Plutarco Urias Mendoza@gmail.com</correo>
+            </proveedor>
+        </proveedores>
+        <transportistas>
+            <transportista codigo = "transportista1">
+                <nombre_empresa>Empresa Alicia Perez Perez</nombre_empresa>
+                                <contacto>
+                    <nombre>Nereida Yessenia Mendoza Coppel</nombre>
+                    <telefono>7554130504</telefono>
+                </contacto>
+            </transportista>
+            <transportista codigo = "transportista2">
+                <nombre_empresa>Empresa Luis Garcia Garcia</nombre_empresa>
+                <contactos>
+                    <contacto>
+                        <nombre>Rebeca Yessenia Garcia Coppel</nombre>
+                        <telefono>1053205079</telefono>
+                    </contacto>
+                    <contacto>
+                        <nombre>Anastacia Alicia Lopez Mendoza</nombre>
+                        <telefono>9991448947</telefono>
+                    </contacto>
+                </contactos>
+            </transportista>
+        </transportistas>
+    </personas>
+    <almacen>
+        <categorias>
+            <categoria codigo = "categoria1">
+                <nombre>Libros</nombre>
+                <descripcion>
+                    Explora nuestro catálogo de libros de todos los géneros. Desde ficción hasta no ficción, tenemos algo para todos.
+                </descripcion>
+            </categoria>
+            <categoria codigo = "categoria2">
+                <nombre>Electrónica</nombre>
+                <descripcion>
+                    Encuentra la última tecnología en teléfonos, laptops, televisores y más. Todo lo que necesitas para estar conectado.
+                </descripcion>
+            </categoria>
+        </categorias>
+        <productos>
+            <producto codigo = "producto1" proveedor = "proveedor2" categoria = "categoria2">
+                <nombre>Novela de ficción</nombre>
+                <precio_unitario>$71</precio_unitario>
+            </producto>
+            <producto codigo = "producto2" proveedor = "proveedor2" categoria = "categoria2">
+                <nombre>Teléfono inteligente</nombre>
+                <precio_unitario>$81</precio_unitario>
+            </producto>
+        </productos>
+    </almacen>
+    <ordenes>
+        <orden codigo = "orden1" cliente = "cliente2" empleado = "empleado2">
+            <fecha>
+                <dia>28</dia>
+                <mes>07</mes>
+                <año>2023</año>
+            </fecha>
+            <orden_detalles>
+                <orden_detalle orden = "orden1" producto = "producto2">
+                    <cantidad>21</cantidad>
+                    <precio_unitario>483</precio_unitario>
+                </orden_detalle>
+                <orden_detalle orden = "orden1" producto = "producto2">
+                    <cantidad>43</cantidad>
+                    <precio_unitario>700</precio_unitario>
+                </orden_detalle>
+            </orden_detalles>
+        </orden>
+        <pepe>
+            hola
+        </pepe>
+        <orden codigo = "orden2" cliente = "cliente100000" empleado = "empleado9000">
+            <fecha>
+                <dia>15</dia>
+                <mes>02</mes>
+                <año>2010</año>
+            </fecha>
+            <orden_detalles>
+                <orden_detalle orden = "orden2" producto = "producto2">
+                    <cantidad>23</cantidad>
+                    <precio_unitario>463</precio_unitario>
+                </orden_detalle>
+                <orden_detalle orden = "orden2" producto = "producto2">
+                    <cantidad>9</cantidad>
+                    <precio_unitario>627</precio_unitario>
+                </orden_detalle>
+            </orden_detalles>
+        </orden>
+    </ordenes>
+</empresa>

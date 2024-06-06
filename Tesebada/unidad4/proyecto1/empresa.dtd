@@ -1,0 +1,61 @@
+<!ELEMENT empresa (personas, almacen, ordenes)>
+
+<!ELEMENT ordenes (orden+)>
+<!ELEMENT orden (fecha, orden_detalles)>
+<!ATTLIST orden codigo ID #REQUIRED>
+<!ATTLIST orden cliente IDREF #REQUIRED>
+<!ATTLIST orden empleado IDREF #REQUIRED>
+
+<!ELEMENT orden_detalles (orden_detalle+)>
+<!ELEMENT orden_detalle (cantidad, precio_unitario)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ATTLIST orden_detalle orden IDREF #REQUIRED>
+<!ATTLIST orden_detalle producto IDREF #REQUIRED>
+
+<!ELEMENT personas (empleados, clientes, proveedores, transportistas)>
+
+<!ELEMENT transportistas (transportista+)>
+<!ELEMENT transportista (nombre_empresa, (contacto | contactos))>
+<!ATTLIST transportista codigo ID #REQUIRED>
+
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (nombre, titulo, fecha_nacimiento, fecha_contratacion, direccion, telefono)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha_nacimiento (fecha)>
+<!ELEMENT fecha_contratacion (fecha)>
+<!ATTLIST empleado codigo ID #REQUIRED>
+<!ATTLIST empleado jefe IDREF #IMPLIED>
+
+<!ELEMENT clientes (cliente+)>
+<!ELEMENT cliente (nombre, fecha_nacimiento, direccion, telefono, correo?)>
+<!ATTLIST cliente codigo ID #REQUIRED>
+
+<!ELEMENT proveedores (proveedor+)>
+<!ELEMENT proveedor (nombre_empresa, (contacto | contactos), correo?)>
+<!ATTLIST proveedor codigo ID #REQUIRED>
+
+<!ELEMENT almacen (categorias, productos)>
+
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre, precio_unitario)>
+<!ATTLIST producto codigo ID #REQUIRED>
+<!ATTLIST producto proveedor IDREF #REQUIRED>
+<!ATTLIST producto categoria IDREF #REQUIRED>
+
+<!ELEMENT categorias (categoria+)>
+<!ELEMENT categoria (nombre, descripcion?)>
+<!ATTLIST categoria codigo ID #REQUIRED>
+
+<!ELEMENT fecha (dia, mes, año)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT nombre_empresa (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT contactos (contacto+)>
+<!ELEMENT contacto (nombre, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>

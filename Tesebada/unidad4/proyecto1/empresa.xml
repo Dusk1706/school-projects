@@ -1,0 +1,3883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "empresa.dtd">
+<empresa>
+    <personas>
+        <empleados>
+            <empleado codigo = "empleado1">
+                <nombre>Luis Daniel Coppel Garcia</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>09</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>10</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 37, Colonia 14, Ciudad 43</direccion>
+                <telefono>5628413391</telefono>
+            </empleado>
+            <empleado codigo = "empleado2" jefe = "empleado1">
+                <nombre>Javier Luis Perez Lopez</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>12</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>01</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 5, Colonia 60, Ciudad 20</direccion>
+                <telefono>3855377745</telefono>
+            </empleado>
+            <empleado codigo = "empleado3" jefe = "empleado2">
+                <nombre>Carolina Sofia Diaz Perez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>04</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>05</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 56, Colonia 13, Ciudad 18</direccion>
+                <telefono>8505933201</telefono>
+            </empleado>
+            <empleado codigo = "empleado4" jefe = "empleado2">
+                <nombre>Sofia Zoila Lopez Diaz</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>09</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>06</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 78, Colonia 26, Ciudad 92</direccion>
+                <telefono>2542061302</telefono>
+            </empleado>
+            <empleado codigo = "empleado5">
+                <nombre>Carolina Yessenia Diaz Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>10</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>10</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 20, Colonia 55, Ciudad 68</direccion>
+                <telefono>2804788276</telefono>
+            </empleado>
+            <empleado codigo = "empleado6">
+                <nombre>Anastacia Maria Urias Urias</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>07</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>12</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 19, Colonia 71, Ciudad 9</direccion>
+                <telefono>6413795774</telefono>
+            </empleado>
+            <empleado codigo = "empleado7" jefe = "empleado3">
+                <nombre>Rebeca Nereida Perez Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>03</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>07</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 52, Colonia 77, Ciudad 7</direccion>
+                <telefono>7040721593</telefono>
+            </empleado>
+            <empleado codigo = "empleado8">
+                <nombre>Sofia Carolina Diaz Urias</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>01</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>04</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 33, Colonia 61, Ciudad 76</direccion>
+                <telefono>1672762520</telefono>
+            </empleado>
+            <empleado codigo = "empleado9" jefe = "empleado5">
+                <nombre>Yessenia Anastacia Coppel Mendoza</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>07</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>04</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 18, Colonia 100, Ciudad 56</direccion>
+                <telefono>2045206930</telefono>
+            </empleado>
+            <empleado codigo = "empleado10" jefe = "empleado3">
+                <nombre>Maria Zoila Perez Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>09</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>06</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 41, Colonia 60, Ciudad 51</direccion>
+                <telefono>9619084617</telefono>
+            </empleado>
+            <empleado codigo = "empleado11">
+                <nombre>Anastacia Alicia Coppel Diaz</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>08</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>02</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 28, Colonia 89, Ciudad 77</direccion>
+                <telefono>5283384310</telefono>
+            </empleado>
+            <empleado codigo = "empleado12" jefe = "empleado8">
+                <nombre>Zoila Yessenia Mendoza Urias</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>10</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>10</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 37, Colonia 24, Ciudad 39</direccion>
+                <telefono>5904241845</telefono>
+            </empleado>
+            <empleado codigo = "empleado13" jefe = "empleado11">
+                <nombre>Rebeca Yessenia Garcia Perez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>01</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>10</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 98, Colonia 43, Ciudad 90</direccion>
+                <telefono>6461105340</telefono>
+            </empleado>
+            <empleado codigo = "empleado14">
+                <nombre>Maria Carolina Mendoza Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>03</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>03</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 19, Colonia 40, Ciudad 25</direccion>
+                <telefono>3428932406</telefono>
+            </empleado>
+            <empleado codigo = "empleado15" jefe = "empleado7">
+                <nombre>Anastacia Yessenia Diaz Diaz</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>04</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>07</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 67, Colonia 69, Ciudad 25</direccion>
+                <telefono>9652122372</telefono>
+            </empleado>
+            <empleado codigo = "empleado16" jefe = "empleado15">
+                <nombre>Javier Luis Perez Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>04</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>08</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 61, Colonia 42, Ciudad 42</direccion>
+                <telefono>1505158005</telefono>
+            </empleado>
+            <empleado codigo = "empleado17" jefe = "empleado6">
+                <nombre>Luis Javier Urias Diaz</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>03</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>01</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 44, Colonia 75, Ciudad 47</direccion>
+                <telefono>6776221911</telefono>
+            </empleado>
+            <empleado codigo = "empleado18" jefe = "empleado9">
+                <nombre>Nereida Anastacia Diaz Mendoza</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>05</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>04</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 55, Colonia 90, Ciudad 37</direccion>
+                <telefono>1555546888</telefono>
+            </empleado>
+            <empleado codigo = "empleado19">
+                <nombre>Javier Plutarco Urias Urias</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>01</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>05</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 42, Colonia 62, Ciudad 3</direccion>
+                <telefono>2845113424</telefono>
+            </empleado>
+            <empleado codigo = "empleado20" jefe = "empleado9">
+                <nombre>Luis Daniel Mendoza Mendoza</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>06</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>10</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 61, Colonia 10, Ciudad 73</direccion>
+                <telefono>7222907542</telefono>
+            </empleado>
+            <empleado codigo = "empleado21" jefe = "empleado2">
+                <nombre>Luis Antonio Perez Diaz</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>05</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>02</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 81, Colonia 50, Ciudad 64</direccion>
+                <telefono>5455347058</telefono>
+            </empleado>
+            <empleado codigo = "empleado22" jefe = "empleado9">
+                <nombre>Sofia Carolina Diaz Diaz</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>04</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>09</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 94, Colonia 20, Ciudad 100</direccion>
+                <telefono>6417673703</telefono>
+            </empleado>
+            <empleado codigo = "empleado23" jefe = "empleado12">
+                <nombre>Luis Javier Coppel Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>10</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>10</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 13, Colonia 48, Ciudad 26</direccion>
+                <telefono>5704105901</telefono>
+            </empleado>
+            <empleado codigo = "empleado24">
+                <nombre>Nereida Anastacia Garcia Mendoza</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>01</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>04</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 30, Colonia 84, Ciudad 84</direccion>
+                <telefono>1280940995</telefono>
+            </empleado>
+            <empleado codigo = "empleado25" jefe = "empleado20">
+                <nombre>Luis Daniel Coppel Coppel</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>05</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>09</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 85, Colonia 64, Ciudad 71</direccion>
+                <telefono>9875568385</telefono>
+            </empleado>
+            <empleado codigo = "empleado26">
+                <nombre>Zoila Nereida Coppel Lopez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>11</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>07</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 62, Colonia 52, Ciudad 42</direccion>
+                <telefono>1316017791</telefono>
+            </empleado>
+            <empleado codigo = "empleado27" jefe = "empleado23">
+                <nombre>Anastacia Maria Mendoza Diaz</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>04</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>10</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 93, Colonia 92, Ciudad 10</direccion>
+                <telefono>5902219688</telefono>
+            </empleado>
+            <empleado codigo = "empleado28" jefe = "empleado14">
+                <nombre>Plutarco Daniel Lopez Perez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>04</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>02</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 35, Colonia 39, Ciudad 31</direccion>
+                <telefono>7718764812</telefono>
+            </empleado>
+            <empleado codigo = "empleado29">
+                <nombre>Nereida Maria Urias Diaz</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>12</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>01</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 69, Colonia 84, Ciudad 68</direccion>
+                <telefono>6995628168</telefono>
+            </empleado>
+            <empleado codigo = "empleado30" jefe = "empleado17">
+                <nombre>Anastacia Maria Lopez Mendoza</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>06</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>08</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 48, Colonia 95, Ciudad 1</direccion>
+                <telefono>4499294454</telefono>
+            </empleado>
+            <empleado codigo = "empleado31" jefe = "empleado12">
+                <nombre>Plutarco Luis Lopez Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>11</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>07</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 20, Colonia 19, Ciudad 51</direccion>
+                <telefono>9522605632</telefono>
+            </empleado>
+            <empleado codigo = "empleado32">
+                <nombre>Javier Plutarco Urias Diaz</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>02</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>03</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 32, Colonia 56, Ciudad 83</direccion>
+                <telefono>4329446163</telefono>
+            </empleado>
+            <empleado codigo = "empleado33" jefe = "empleado26">
+                <nombre>Maria Yessenia Lopez Urias</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>12</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>08</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 36, Colonia 66, Ciudad 87</direccion>
+                <telefono>6220902171</telefono>
+            </empleado>
+            <empleado codigo = "empleado34">
+                <nombre>Nereida Yessenia Urias Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>11</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>11</dia>
+                        <mes>06</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 48, Colonia 42, Ciudad 39</direccion>
+                <telefono>8203465539</telefono>
+            </empleado>
+            <empleado codigo = "empleado35" jefe = "empleado31">
+                <nombre>Anastacia Alicia Urias Lopez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>11</dia>
+                        <mes>07</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>06</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 98, Colonia 3, Ciudad 3</direccion>
+                <telefono>4433715186</telefono>
+            </empleado>
+            <empleado codigo = "empleado36">
+                <nombre>Luis Antonio Mendoza Diaz</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>06</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>08</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 63, Colonia 47, Ciudad 11</direccion>
+                <telefono>1699576110</telefono>
+            </empleado>
+            <empleado codigo = "empleado37" jefe = "empleado28">
+                <nombre>Carolina Alicia Mendoza Lopez</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>01</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>06</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 97, Colonia 89, Ciudad 20</direccion>
+                <telefono>2254892948</telefono>
+            </empleado>
+            <empleado codigo = "empleado38" jefe = "empleado31">
+                <nombre>Javier Luis Mendoza Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>11</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>06</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 14, Colonia 54, Ciudad 50</direccion>
+                <telefono>2235755621</telefono>
+            </empleado>
+            <empleado codigo = "empleado39">
+                <nombre>Nereida Carolina Urias Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>12</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>11</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 22, Colonia 36, Ciudad 35</direccion>
+                <telefono>6368048544</telefono>
+            </empleado>
+            <empleado codigo = "empleado40" jefe = "empleado39">
+                <nombre>Yessenia Maria Lopez Perez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>08</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>01</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 31, Colonia 3, Ciudad 29</direccion>
+                <telefono>7612860464</telefono>
+            </empleado>
+            <empleado codigo = "empleado41">
+                <nombre>Rebeca Anastacia Garcia Garcia</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>09</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>08</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 45, Colonia 50, Ciudad 53</direccion>
+                <telefono>1608964525</telefono>
+            </empleado>
+            <empleado codigo = "empleado42">
+                <nombre>Luis Daniel Garcia Urias</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>07</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>06</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 50, Colonia 79, Ciudad 89</direccion>
+                <telefono>8740209788</telefono>
+            </empleado>
+            <empleado codigo = "empleado43">
+                <nombre>Carolina Nereida Garcia Garcia</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>08</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>12</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 56, Colonia 51, Ciudad 89</direccion>
+                <telefono>3857077674</telefono>
+            </empleado>
+            <empleado codigo = "empleado44" jefe = "empleado1">
+                <nombre>Zoila Carolina Urias Diaz</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>01</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>03</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 64, Colonia 97, Ciudad 54</direccion>
+                <telefono>6069925615</telefono>
+            </empleado>
+            <empleado codigo = "empleado45">
+                <nombre>Nereida Maria Diaz Urias</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>08</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>05</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 63, Colonia 60, Ciudad 5</direccion>
+                <telefono>9450798978</telefono>
+            </empleado>
+            <empleado codigo = "empleado46" jefe = "empleado34">
+                <nombre>Sofia Anastacia Coppel Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>02</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>03</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 69, Colonia 33, Ciudad 23</direccion>
+                <telefono>4204051100</telefono>
+            </empleado>
+            <empleado codigo = "empleado47" jefe = "empleado6">
+                <nombre>Antonio Daniel Diaz Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>01</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>01</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 44, Colonia 35, Ciudad 89</direccion>
+                <telefono>5861756931</telefono>
+            </empleado>
+            <empleado codigo = "empleado48">
+                <nombre>Luis Antonio Perez Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>04</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>07</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 30, Colonia 63, Ciudad 81</direccion>
+                <telefono>3291297842</telefono>
+            </empleado>
+            <empleado codigo = "empleado49" jefe = "empleado14">
+                <nombre>Luis Antonio Perez Diaz</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>12</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>22</dia>
+                        <mes>03</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 42, Colonia 92, Ciudad 20</direccion>
+                <telefono>5267339915</telefono>
+            </empleado>
+            <empleado codigo = "empleado50" jefe = "empleado3">
+                <nombre>Anastacia Sofia Urias Mendoza</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>03</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>05</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 2, Colonia 75, Ciudad 23</direccion>
+                <telefono>9569894961</telefono>
+            </empleado>
+            <empleado codigo = "empleado51">
+                <nombre>Javier Luis Coppel Coppel</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>01</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>01</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 72, Colonia 58, Ciudad 60</direccion>
+                <telefono>3444508579</telefono>
+            </empleado>
+            <empleado codigo = "empleado52">
+                <nombre>Yessenia Nereida Garcia Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>05</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>03</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 100, Colonia 80, Ciudad 67</direccion>
+                <telefono>2624069076</telefono>
+            </empleado>
+            <empleado codigo = "empleado53" jefe = "empleado51">
+                <nombre>Daniel Javier Mendoza Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>04</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>09</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 76, Colonia 59, Ciudad 88</direccion>
+                <telefono>2292648615</telefono>
+            </empleado>
+            <empleado codigo = "empleado54">
+                <nombre>Javier Plutarco Mendoza Lopez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>06</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>05</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 41, Colonia 26, Ciudad 67</direccion>
+                <telefono>3563685931</telefono>
+            </empleado>
+            <empleado codigo = "empleado55" jefe = "empleado20">
+                <nombre>Alicia Nereida Lopez Lopez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>02</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>04</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 13, Colonia 27, Ciudad 100</direccion>
+                <telefono>3571535132</telefono>
+            </empleado>
+            <empleado codigo = "empleado56" jefe = "empleado17">
+                <nombre>Rebeca Yessenia Mendoza Mendoza</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>11</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>06</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 43, Colonia 46, Ciudad 83</direccion>
+                <telefono>8048961553</telefono>
+            </empleado>
+            <empleado codigo = "empleado57" jefe = "empleado37">
+                <nombre>Plutarco Antonio Lopez Coppel</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>08</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>06</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 6, Colonia 45, Ciudad 49</direccion>
+                <telefono>9860883572</telefono>
+            </empleado>
+            <empleado codigo = "empleado58" jefe = "empleado34">
+                <nombre>Luis Daniel Lopez Coppel</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>12</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>10</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 64, Colonia 34, Ciudad 27</direccion>
+                <telefono>2779834321</telefono>
+            </empleado>
+            <empleado codigo = "empleado59" jefe = "empleado18">
+                <nombre>Zoila Nereida Coppel Perez</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>10</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>05</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 95, Colonia 89, Ciudad 41</direccion>
+                <telefono>8634639369</telefono>
+            </empleado>
+            <empleado codigo = "empleado60">
+                <nombre>Luis Javier Diaz Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>09</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>04</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 39, Colonia 96, Ciudad 82</direccion>
+                <telefono>3846611765</telefono>
+            </empleado>
+            <empleado codigo = "empleado61">
+                <nombre>Daniel Luis Diaz Mendoza</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>11</dia>
+                        <mes>11</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>04</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 11, Colonia 73, Ciudad 97</direccion>
+                <telefono>1404125363</telefono>
+            </empleado>
+            <empleado codigo = "empleado62" jefe = "empleado41">
+                <nombre>Plutarco Antonio Lopez Diaz</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>05</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>07</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 42, Colonia 56, Ciudad 2</direccion>
+                <telefono>3777963894</telefono>
+            </empleado>
+            <empleado codigo = "empleado63" jefe = "empleado19">
+                <nombre>Sofia Anastacia Perez Garcia</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>10</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>09</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 100, Colonia 6, Ciudad 33</direccion>
+                <telefono>2426705710</telefono>
+            </empleado>
+            <empleado codigo = "empleado64" jefe = "empleado13">
+                <nombre>Luis Antonio Coppel Perez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>07</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>02</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 19, Colonia 40, Ciudad 93</direccion>
+                <telefono>7628492486</telefono>
+            </empleado>
+            <empleado codigo = "empleado65" jefe = "empleado21">
+                <nombre>Alicia Maria Diaz Diaz</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>07</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>02</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 19, Colonia 95, Ciudad 69</direccion>
+                <telefono>4850256962</telefono>
+            </empleado>
+            <empleado codigo = "empleado66" jefe = "empleado31">
+                <nombre>Maria Yessenia Urias Lopez</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>12</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>01</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 98, Colonia 54, Ciudad 5</direccion>
+                <telefono>6757835030</telefono>
+            </empleado>
+            <empleado codigo = "empleado67">
+                <nombre>Sofia Anastacia Lopez Perez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>06</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>12</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 91, Colonia 71, Ciudad 20</direccion>
+                <telefono>9315239913</telefono>
+            </empleado>
+            <empleado codigo = "empleado68">
+                <nombre>Alicia Anastacia Coppel Urias</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>12</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>07</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 27, Colonia 96, Ciudad 51</direccion>
+                <telefono>5383441636</telefono>
+            </empleado>
+            <empleado codigo = "empleado69">
+                <nombre>Plutarco Luis Garcia Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>12</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>02</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 46, Colonia 16, Ciudad 15</direccion>
+                <telefono>6577418402</telefono>
+            </empleado>
+            <empleado codigo = "empleado70">
+                <nombre>Javier Plutarco Coppel Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>04</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>11</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 97, Colonia 95, Ciudad 96</direccion>
+                <telefono>3438010358</telefono>
+            </empleado>
+            <empleado codigo = "empleado71" jefe = "empleado26">
+                <nombre>Yessenia Maria Perez Urias</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>10</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>05</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 41, Colonia 87, Ciudad 31</direccion>
+                <telefono>5962566831</telefono>
+            </empleado>
+            <empleado codigo = "empleado72" jefe = "empleado69">
+                <nombre>Zoila Maria Lopez Coppel</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>01</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>10</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 57, Colonia 27, Ciudad 77</direccion>
+                <telefono>3014266337</telefono>
+            </empleado>
+            <empleado codigo = "empleado73">
+                <nombre>Plutarco Antonio Urias Mendoza</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>11</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>06</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 49, Colonia 90, Ciudad 54</direccion>
+                <telefono>9989630338</telefono>
+            </empleado>
+            <empleado codigo = "empleado74" jefe = "empleado49">
+                <nombre>Javier Plutarco Mendoza Coppel</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>08</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>01</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 70, Colonia 49, Ciudad 76</direccion>
+                <telefono>4157992343</telefono>
+            </empleado>
+            <empleado codigo = "empleado75">
+                <nombre>Rebeca Carolina Garcia Coppel</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>01</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>09</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 15, Colonia 2, Ciudad 60</direccion>
+                <telefono>5362210825</telefono>
+            </empleado>
+            <empleado codigo = "empleado76">
+                <nombre>Daniel Luis Diaz Diaz</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>11</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>03</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 25, Colonia 80, Ciudad 94</direccion>
+                <telefono>2297420350</telefono>
+            </empleado>
+            <empleado codigo = "empleado77">
+                <nombre>Plutarco Antonio Coppel Coppel</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>12</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>07</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 47, Colonia 33, Ciudad 52</direccion>
+                <telefono>4133519296</telefono>
+            </empleado>
+            <empleado codigo = "empleado78">
+                <nombre>Luis Plutarco Mendoza Perez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>09</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>06</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 56, Colonia 85, Ciudad 100</direccion>
+                <telefono>5229388206</telefono>
+            </empleado>
+            <empleado codigo = "empleado79" jefe = "empleado9">
+                <nombre>Javier Daniel Lopez Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>08</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>03</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 100, Colonia 5, Ciudad 57</direccion>
+                <telefono>9025948719</telefono>
+            </empleado>
+            <empleado codigo = "empleado80" jefe = "empleado77">
+                <nombre>Luis Javier Coppel Garcia</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>09</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>08</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 94, Colonia 93, Ciudad 71</direccion>
+                <telefono>5540472636</telefono>
+            </empleado>
+            <empleado codigo = "empleado81" jefe = "empleado28">
+                <nombre>Nereida Maria Perez Coppel</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>03</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>11</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 45, Colonia 4, Ciudad 20</direccion>
+                <telefono>3008778341</telefono>
+            </empleado>
+            <empleado codigo = "empleado82">
+                <nombre>Nereida Carolina Garcia Mendoza</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>07</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>09</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 1, Colonia 97, Ciudad 75</direccion>
+                <telefono>3284040295</telefono>
+            </empleado>
+            <empleado codigo = "empleado83" jefe = "empleado3">
+                <nombre>Anastacia Sofia Mendoza Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>11</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>10</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 26, Colonia 7, Ciudad 57</direccion>
+                <telefono>9524128915</telefono>
+            </empleado>
+            <empleado codigo = "empleado84">
+                <nombre>Anastacia Rebeca Perez Mendoza</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>11</dia>
+                        <mes>03</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>12</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 66, Colonia 36, Ciudad 92</direccion>
+                <telefono>7006741582</telefono>
+            </empleado>
+            <empleado codigo = "empleado85" jefe = "empleado41">
+                <nombre>Yessenia Nereida Perez Coppel</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>06</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>09</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 18, Colonia 37, Ciudad 51</direccion>
+                <telefono>6867545910</telefono>
+            </empleado>
+            <empleado codigo = "empleado86">
+                <nombre>Javier Antonio Coppel Mendoza</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>11</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>11</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 38, Colonia 31, Ciudad 82</direccion>
+                <telefono>8720394422</telefono>
+            </empleado>
+            <empleado codigo = "empleado87" jefe = "empleado61">
+                <nombre>Carolina Anastacia Urias Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>11</dia>
+                        <mes>06</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>08</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 1, Colonia 5, Ciudad 90</direccion>
+                <telefono>5782487699</telefono>
+            </empleado>
+            <empleado codigo = "empleado88" jefe = "empleado19">
+                <nombre>Rebeca Nereida Mendoza Lopez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>08</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>09</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 84, Colonia 74, Ciudad 29</direccion>
+                <telefono>1237075451</telefono>
+            </empleado>
+            <empleado codigo = "empleado89">
+                <nombre>Rebeca Alicia Mendoza Diaz</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>06</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>10</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 93, Colonia 11, Ciudad 34</direccion>
+                <telefono>2067678302</telefono>
+            </empleado>
+            <empleado codigo = "empleado90" jefe = "empleado76">
+                <nombre>Maria Sofia Coppel Garcia</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>07</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>08</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 3, Colonia 41, Ciudad 79</direccion>
+                <telefono>1660193399</telefono>
+            </empleado>
+            <empleado codigo = "empleado91">
+                <nombre>Nereida Zoila Mendoza Perez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>10</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>10</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 5, Colonia 29, Ciudad 3</direccion>
+                <telefono>8680065739</telefono>
+            </empleado>
+            <empleado codigo = "empleado92" jefe = "empleado3">
+                <nombre>Maria Nereida Urias Coppel</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>01</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>02</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 84, Colonia 2, Ciudad 46</direccion>
+                <telefono>7174046703</telefono>
+            </empleado>
+            <empleado codigo = "empleado93" jefe = "empleado16">
+                <nombre>Carolina Maria Perez Mendoza</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>04</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>01</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 64, Colonia 52, Ciudad 93</direccion>
+                <telefono>7481687625</telefono>
+            </empleado>
+            <empleado codigo = "empleado94" jefe = "empleado13">
+                <nombre>Javier Plutarco Mendoza Mendoza</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>04</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>09</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 26, Colonia 55, Ciudad 70</direccion>
+                <telefono>3567717972</telefono>
+            </empleado>
+            <empleado codigo = "empleado95">
+                <nombre>Anastacia Zoila Lopez Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>10</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>09</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 77, Colonia 81, Ciudad 76</direccion>
+                <telefono>9185570211</telefono>
+            </empleado>
+            <empleado codigo = "empleado96" jefe = "empleado20">
+                <nombre>Luis Daniel Lopez Mendoza</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>12</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>06</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 31, Colonia 65, Ciudad 74</direccion>
+                <telefono>6538553192</telefono>
+            </empleado>
+            <empleado codigo = "empleado97" jefe = "empleado6">
+                <nombre>Javier Luis Lopez Coppel</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>02</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>07</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 57, Colonia 62, Ciudad 95</direccion>
+                <telefono>6613858112</telefono>
+            </empleado>
+            <empleado codigo = "empleado98">
+                <nombre>Yessenia Alicia Coppel Coppel</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>02</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>08</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 85, Colonia 92, Ciudad 20</direccion>
+                <telefono>5833304306</telefono>
+            </empleado>
+            <empleado codigo = "empleado99" jefe = "empleado24">
+                <nombre>Zoila Nereida Lopez Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>06</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>07</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 12, Colonia 18, Ciudad 39</direccion>
+                <telefono>6912763687</telefono>
+            </empleado>
+            <empleado codigo = "empleado100">
+                <nombre>Nereida Zoila Urias Lopez</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>08</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>11</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 100, Colonia 88, Ciudad 38</direccion>
+                <telefono>4653577084</telefono>
+            </empleado>
+            <empleado codigo = "empleado101">
+                <nombre>Yessenia Nereida Perez Perez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>07</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>02</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 45, Colonia 22, Ciudad 97</direccion>
+                <telefono>7579348856</telefono>
+            </empleado>
+            <empleado codigo = "empleado102">
+                <nombre>Anastacia Nereida Diaz Diaz</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>06</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>04</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 76, Colonia 76, Ciudad 93</direccion>
+                <telefono>6936522442</telefono>
+            </empleado>
+            <empleado codigo = "empleado103">
+                <nombre>Sofia Zoila Perez Mendoza</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>03</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>07</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 55, Colonia 98, Ciudad 9</direccion>
+                <telefono>3887689758</telefono>
+            </empleado>
+            <empleado codigo = "empleado104" jefe = "empleado4">
+                <nombre>Antonio Javier Coppel Mendoza</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>12</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>09</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 62, Colonia 39, Ciudad 13</direccion>
+                <telefono>4068412810</telefono>
+            </empleado>
+            <empleado codigo = "empleado105" jefe = "empleado15">
+                <nombre>Daniel Javier Mendoza Perez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>09</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>01</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 1, Colonia 46, Ciudad 78</direccion>
+                <telefono>1475651338</telefono>
+            </empleado>
+            <empleado codigo = "empleado106" jefe = "empleado20">
+                <nombre>Daniel Plutarco Mendoza Mendoza</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>04</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>05</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 98, Colonia 1, Ciudad 91</direccion>
+                <telefono>8213327859</telefono>
+            </empleado>
+            <empleado codigo = "empleado107">
+                <nombre>Luis Daniel Coppel Lopez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>08</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>08</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 2, Colonia 11, Ciudad 84</direccion>
+                <telefono>9821178838</telefono>
+            </empleado>
+            <empleado codigo = "empleado108">
+                <nombre>Carolina Alicia Mendoza Perez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>08</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>12</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 79, Colonia 99, Ciudad 65</direccion>
+                <telefono>9890757441</telefono>
+            </empleado>
+            <empleado codigo = "empleado109" jefe = "empleado85">
+                <nombre>Luis Plutarco Lopez Diaz</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>09</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>10</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 88, Colonia 94, Ciudad 49</direccion>
+                <telefono>9105320045</telefono>
+            </empleado>
+            <empleado codigo = "empleado110">
+                <nombre>Antonio Daniel Coppel Mendoza</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>09</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>02</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 11, Colonia 31, Ciudad 59</direccion>
+                <telefono>7344279348</telefono>
+            </empleado>
+            <empleado codigo = "empleado111" jefe = "empleado108">
+                <nombre>Nereida Anastacia Coppel Lopez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>12</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>12</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 11, Colonia 99, Ciudad 79</direccion>
+                <telefono>6550239962</telefono>
+            </empleado>
+            <empleado codigo = "empleado112">
+                <nombre>Luis Plutarco Urias Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>08</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>09</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 83, Colonia 9, Ciudad 54</direccion>
+                <telefono>1907289790</telefono>
+            </empleado>
+            <empleado codigo = "empleado113">
+                <nombre>Anastacia Alicia Urias Coppel</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>08</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>07</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 20, Colonia 17, Ciudad 8</direccion>
+                <telefono>8918013982</telefono>
+            </empleado>
+            <empleado codigo = "empleado114" jefe = "empleado50">
+                <nombre>Zoila Sofia Lopez Urias</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>05</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>07</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 78, Colonia 29, Ciudad 38</direccion>
+                <telefono>5286375496</telefono>
+            </empleado>
+            <empleado codigo = "empleado115" jefe = "empleado6">
+                <nombre>Yessenia Nereida Diaz Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>02</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>06</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 40, Colonia 96, Ciudad 89</direccion>
+                <telefono>8388650275</telefono>
+            </empleado>
+            <empleado codigo = "empleado116">
+                <nombre>Sofia Carolina Diaz Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>08</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>06</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 5, Colonia 90, Ciudad 83</direccion>
+                <telefono>6529197075</telefono>
+            </empleado>
+            <empleado codigo = "empleado117" jefe = "empleado71">
+                <nombre>Rebeca Nereida Mendoza Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>04</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>11</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 99, Colonia 37, Ciudad 97</direccion>
+                <telefono>3657230261</telefono>
+            </empleado>
+            <empleado codigo = "empleado118">
+                <nombre>Nereida Carolina Urias Perez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>22</dia>
+                        <mes>01</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>10</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 72, Colonia 95, Ciudad 84</direccion>
+                <telefono>1915078027</telefono>
+            </empleado>
+            <empleado codigo = "empleado119">
+                <nombre>Sofia Yessenia Perez Diaz</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>06</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>12</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 4, Colonia 14, Ciudad 12</direccion>
+                <telefono>3694156820</telefono>
+            </empleado>
+            <empleado codigo = "empleado120">
+                <nombre>Javier Plutarco Urias Diaz</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>09</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>05</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 44, Colonia 91, Ciudad 70</direccion>
+                <telefono>3006342303</telefono>
+            </empleado>
+            <empleado codigo = "empleado121">
+                <nombre>Luis Plutarco Diaz Urias</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>05</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>10</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 64, Colonia 78, Ciudad 15</direccion>
+                <telefono>4296092157</telefono>
+            </empleado>
+            <empleado codigo = "empleado122">
+                <nombre>Sofia Nereida Urias Garcia</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>08</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>02</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 6, Colonia 21, Ciudad 11</direccion>
+                <telefono>4803605475</telefono>
+            </empleado>
+            <empleado codigo = "empleado123">
+                <nombre>Luis Antonio Coppel Mendoza</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>10</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>10</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 75, Colonia 38, Ciudad 61</direccion>
+                <telefono>7250708902</telefono>
+            </empleado>
+            <empleado codigo = "empleado124" jefe = "empleado102">
+                <nombre>Zoila Carolina Lopez Coppel</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>05</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>05</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 38, Colonia 3, Ciudad 87</direccion>
+                <telefono>5023810597</telefono>
+            </empleado>
+            <empleado codigo = "empleado125">
+                <nombre>Yessenia Sofia Mendoza Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>02</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>07</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 19, Colonia 62, Ciudad 7</direccion>
+                <telefono>6466483955</telefono>
+            </empleado>
+            <empleado codigo = "empleado126">
+                <nombre>Javier Antonio Garcia Garcia</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>07</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>02</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 54, Colonia 83, Ciudad 7</direccion>
+                <telefono>7591853740</telefono>
+            </empleado>
+            <empleado codigo = "empleado127">
+                <nombre>Luis Javier Garcia Lopez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>06</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>09</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 35, Colonia 94, Ciudad 27</direccion>
+                <telefono>2996348201</telefono>
+            </empleado>
+            <empleado codigo = "empleado128">
+                <nombre>Anastacia Maria Lopez Garcia</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>02</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>03</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 62, Colonia 61, Ciudad 10</direccion>
+                <telefono>3917256173</telefono>
+            </empleado>
+            <empleado codigo = "empleado129" jefe = "empleado54">
+                <nombre>Sofia Alicia Mendoza Garcia</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>06</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>06</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 92, Colonia 27, Ciudad 74</direccion>
+                <telefono>3133204892</telefono>
+            </empleado>
+            <empleado codigo = "empleado130" jefe = "empleado35">
+                <nombre>Daniel Antonio Perez Mendoza</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>09</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>01</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 51, Colonia 55, Ciudad 17</direccion>
+                <telefono>7067338695</telefono>
+            </empleado>
+            <empleado codigo = "empleado131" jefe = "empleado67">
+                <nombre>Alicia Nereida Diaz Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>08</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>09</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 99, Colonia 41, Ciudad 47</direccion>
+                <telefono>8230517130</telefono>
+            </empleado>
+            <empleado codigo = "empleado132">
+                <nombre>Zoila Nereida Diaz Garcia</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>08</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>07</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 58, Colonia 43, Ciudad 96</direccion>
+                <telefono>9640188478</telefono>
+            </empleado>
+            <empleado codigo = "empleado133" jefe = "empleado80">
+                <nombre>Carolina Anastacia Diaz Diaz</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>10</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>11</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 17, Colonia 17, Ciudad 43</direccion>
+                <telefono>7212043885</telefono>
+            </empleado>
+            <empleado codigo = "empleado134">
+                <nombre>Luis Plutarco Urias Perez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>09</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>05</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 15, Colonia 63, Ciudad 8</direccion>
+                <telefono>7793105833</telefono>
+            </empleado>
+            <empleado codigo = "empleado135" jefe = "empleado46">
+                <nombre>Maria Yessenia Garcia Urias</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>03</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>08</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 73, Colonia 18, Ciudad 17</direccion>
+                <telefono>8043377597</telefono>
+            </empleado>
+            <empleado codigo = "empleado136" jefe = "empleado12">
+                <nombre>Yessenia Nereida Lopez Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>05</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>05</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 7, Colonia 86, Ciudad 39</direccion>
+                <telefono>6076997667</telefono>
+            </empleado>
+            <empleado codigo = "empleado137" jefe = "empleado127">
+                <nombre>Nereida Rebeca Garcia Perez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>01</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>06</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 39, Colonia 83, Ciudad 63</direccion>
+                <telefono>5660941036</telefono>
+            </empleado>
+            <empleado codigo = "empleado138">
+                <nombre>Anastacia Rebeca Garcia Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>03</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>02</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 42, Colonia 85, Ciudad 13</direccion>
+                <telefono>2136814869</telefono>
+            </empleado>
+            <empleado codigo = "empleado139">
+                <nombre>Alicia Yessenia Garcia Lopez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>11</dia>
+                        <mes>07</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>03</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 37, Colonia 19, Ciudad 82</direccion>
+                <telefono>1068629386</telefono>
+            </empleado>
+            <empleado codigo = "empleado140" jefe = "empleado74">
+                <nombre>Zoila Sofia Coppel Perez</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>06</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>29</dia>
+                        <mes>07</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 92, Colonia 56, Ciudad 89</direccion>
+                <telefono>8626210433</telefono>
+            </empleado>
+            <empleado codigo = "empleado141">
+                <nombre>Alicia Maria Diaz Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>06</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>01</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 28, Colonia 63, Ciudad 63</direccion>
+                <telefono>2855190878</telefono>
+            </empleado>
+            <empleado codigo = "empleado142" jefe = "empleado139">
+                <nombre>Alicia Zoila Garcia Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>05</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>05</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 71, Colonia 37, Ciudad 95</direccion>
+                <telefono>5363451633</telefono>
+            </empleado>
+            <empleado codigo = "empleado143">
+                <nombre>Nereida Yessenia Garcia Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>10</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>06</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 45, Colonia 18, Ciudad 52</direccion>
+                <telefono>8570995151</telefono>
+            </empleado>
+            <empleado codigo = "empleado144" jefe = "empleado63">
+                <nombre>Daniel Luis Diaz Diaz</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>03</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>05</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 82, Colonia 7, Ciudad 16</direccion>
+                <telefono>1631440431</telefono>
+            </empleado>
+            <empleado codigo = "empleado145">
+                <nombre>Plutarco Javier Diaz Lopez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>03</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>04</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 12, Colonia 66, Ciudad 10</direccion>
+                <telefono>6013781786</telefono>
+            </empleado>
+            <empleado codigo = "empleado146">
+                <nombre>Luis Javier Urias Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>03</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>03</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 40, Colonia 13, Ciudad 16</direccion>
+                <telefono>9353914974</telefono>
+            </empleado>
+            <empleado codigo = "empleado147">
+                <nombre>Rebeca Zoila Mendoza Perez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>10</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>09</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 100, Colonia 86, Ciudad 88</direccion>
+                <telefono>8331813249</telefono>
+            </empleado>
+            <empleado codigo = "empleado148" jefe = "empleado133">
+                <nombre>Nereida Sofia Coppel Mendoza</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>10</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>10</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 13, Colonia 9, Ciudad 67</direccion>
+                <telefono>9254541085</telefono>
+            </empleado>
+            <empleado codigo = "empleado149" jefe = "empleado82">
+                <nombre>Luis Javier Urias Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>11</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>04</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 30, Colonia 31, Ciudad 49</direccion>
+                <telefono>1672363228</telefono>
+            </empleado>
+            <empleado codigo = "empleado150">
+                <nombre>Maria Nereida Coppel Lopez</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>10</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>07</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 35, Colonia 67, Ciudad 82</direccion>
+                <telefono>1017203858</telefono>
+            </empleado>
+            <empleado codigo = "empleado151" jefe = "empleado104">
+                <nombre>Carolina Zoila Diaz Diaz</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>08</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>01</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 21, Colonia 80, Ciudad 40</direccion>
+                <telefono>9406631711</telefono>
+            </empleado>
+            <empleado codigo = "empleado152" jefe = "empleado148">
+                <nombre>Antonio Daniel Urias Perez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>12</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>04</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 51, Colonia 94, Ciudad 45</direccion>
+                <telefono>7011662279</telefono>
+            </empleado>
+            <empleado codigo = "empleado153">
+                <nombre>Yessenia Zoila Lopez Urias</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>11</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>06</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 15, Colonia 43, Ciudad 57</direccion>
+                <telefono>1808252603</telefono>
+            </empleado>
+            <empleado codigo = "empleado154" jefe = "empleado17">
+                <nombre>Rebeca Nereida Garcia Perez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>12</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>09</mes>
+                        <año>2000</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 2, Colonia 33, Ciudad 36</direccion>
+                <telefono>7272891410</telefono>
+            </empleado>
+            <empleado codigo = "empleado155" jefe = "empleado138">
+                <nombre>Yessenia Maria Perez Diaz</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>03</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>05</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 64, Colonia 99, Ciudad 21</direccion>
+                <telefono>4476216027</telefono>
+            </empleado>
+            <empleado codigo = "empleado156">
+                <nombre>Plutarco Antonio Mendoza Perez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>02</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>10</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 53, Colonia 26, Ciudad 31</direccion>
+                <telefono>3254860035</telefono>
+            </empleado>
+            <empleado codigo = "empleado157" jefe = "empleado93">
+                <nombre>Daniel Plutarco Perez Coppel</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>12</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>12</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 21, Colonia 23, Ciudad 18</direccion>
+                <telefono>4567986811</telefono>
+            </empleado>
+            <empleado codigo = "empleado158" jefe = "empleado110">
+                <nombre>Luis Javier Coppel Urias</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>10</dia>
+                        <mes>12</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>02</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 45, Colonia 19, Ciudad 81</direccion>
+                <telefono>8038715430</telefono>
+            </empleado>
+            <empleado codigo = "empleado159">
+                <nombre>Luis Antonio Urias Lopez</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>09</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>10</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 34, Colonia 88, Ciudad 7</direccion>
+                <telefono>3679378321</telefono>
+            </empleado>
+            <empleado codigo = "empleado160" jefe = "empleado93">
+                <nombre>Zoila Rebeca Perez Perez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>09</mes>
+                        <año>2020</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>11</dia>
+                        <mes>03</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 82, Colonia 30, Ciudad 94</direccion>
+                <telefono>7187936690</telefono>
+            </empleado>
+            <empleado codigo = "empleado161">
+                <nombre>Javier Plutarco Coppel Urias</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>05</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>07</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 23, Colonia 99, Ciudad 20</direccion>
+                <telefono>2687448622</telefono>
+            </empleado>
+            <empleado codigo = "empleado162">
+                <nombre>Antonio Luis Urias Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>11</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>03</mes>
+                        <año>2007</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 27, Colonia 27, Ciudad 68</direccion>
+                <telefono>6448701265</telefono>
+            </empleado>
+            <empleado codigo = "empleado163">
+                <nombre>Zoila Anastacia Urias Garcia</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>20</dia>
+                        <mes>08</mes>
+                        <año>2015</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>06</mes>
+                        <año>2016</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 7, Colonia 8, Ciudad 20</direccion>
+                <telefono>2748542253</telefono>
+            </empleado>
+            <empleado codigo = "empleado164">
+                <nombre>Plutarco Antonio Urias Perez</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>06</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>09</mes>
+                        <año>2002</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 83, Colonia 2, Ciudad 95</direccion>
+                <telefono>2849015861</telefono>
+            </empleado>
+            <empleado codigo = "empleado165" jefe = "empleado83">
+                <nombre>Anastacia Nereida Perez Coppel</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>22</dia>
+                        <mes>05</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>01</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 65, Colonia 96, Ciudad 98</direccion>
+                <telefono>7756091530</telefono>
+            </empleado>
+            <empleado codigo = "empleado166">
+                <nombre>Luis Daniel Mendoza Coppel</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>12</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>10</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 98, Colonia 73, Ciudad 54</direccion>
+                <telefono>9720010232</telefono>
+            </empleado>
+            <empleado codigo = "empleado167" jefe = "empleado164">
+                <nombre>Rebeca Nereida Mendoza Perez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>11</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>03</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 53, Colonia 11, Ciudad 78</direccion>
+                <telefono>5164491118</telefono>
+            </empleado>
+            <empleado codigo = "empleado168" jefe = "empleado4">
+                <nombre>Maria Rebeca Lopez Diaz</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>12</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>05</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 52, Colonia 27, Ciudad 57</direccion>
+                <telefono>7529887787</telefono>
+            </empleado>
+            <empleado codigo = "empleado169" jefe = "empleado166">
+                <nombre>Sofia Rebeca Garcia Urias</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>24</dia>
+                        <mes>05</mes>
+                        <año>2022</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>10</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 36, Colonia 64, Ciudad 26</direccion>
+                <telefono>8609536047</telefono>
+            </empleado>
+            <empleado codigo = "empleado170">
+                <nombre>Rebeca Maria Perez Garcia</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>08</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>11</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 34, Colonia 57, Ciudad 47</direccion>
+                <telefono>3530428944</telefono>
+            </empleado>
+            <empleado codigo = "empleado171" jefe = "empleado147">
+                <nombre>Carolina Yessenia Lopez Perez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>03</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>22</dia>
+                        <mes>06</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 46, Colonia 87, Ciudad 19</direccion>
+                <telefono>4434935714</telefono>
+            </empleado>
+            <empleado codigo = "empleado172">
+                <nombre>Daniel Luis Lopez Mendoza</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>04</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>06</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 100, Colonia 90, Ciudad 91</direccion>
+                <telefono>6802873168</telefono>
+            </empleado>
+            <empleado codigo = "empleado173" jefe = "empleado82">
+                <nombre>Maria Zoila Diaz Garcia</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>05</dia>
+                        <mes>06</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>02</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 31, Colonia 33, Ciudad 25</direccion>
+                <telefono>1098638117</telefono>
+            </empleado>
+            <empleado codigo = "empleado174" jefe = "empleado155">
+                <nombre>Daniel Javier Garcia Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>10</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>07</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 53, Colonia 86, Ciudad 99</direccion>
+                <telefono>3987609033</telefono>
+            </empleado>
+            <empleado codigo = "empleado175" jefe = "empleado88">
+                <nombre>Yessenia Anastacia Diaz Coppel</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>12</mes>
+                        <año>2005</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>04</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 100, Colonia 98, Ciudad 55</direccion>
+                <telefono>6049932897</telefono>
+            </empleado>
+            <empleado codigo = "empleado176" jefe = "empleado156">
+                <nombre>Maria Yessenia Mendoza Mendoza</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>01</mes>
+                        <año>2019</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>11</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 43, Colonia 51, Ciudad 1</direccion>
+                <telefono>8266497841</telefono>
+            </empleado>
+            <empleado codigo = "empleado177">
+                <nombre>Carolina Rebeca Lopez Mendoza</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>08</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>10</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 19, Colonia 86, Ciudad 17</direccion>
+                <telefono>8475493161</telefono>
+            </empleado>
+            <empleado codigo = "empleado178">
+                <nombre>Yessenia Nereida Urias Lopez</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>09</mes>
+                        <año>2010</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>01</dia>
+                        <mes>12</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 50, Colonia 72, Ciudad 16</direccion>
+                <telefono>1042280114</telefono>
+            </empleado>
+            <empleado codigo = "empleado179" jefe = "empleado151">
+                <nombre>Maria Sofia Perez Lopez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>07</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>22</dia>
+                        <mes>04</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 75, Colonia 28, Ciudad 47</direccion>
+                <telefono>1309715693</telefono>
+            </empleado>
+            <empleado codigo = "empleado180">
+                <nombre>Rebeca Yessenia Diaz Mendoza</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>11</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>11</mes>
+                        <año>2024</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 14, Colonia 43, Ciudad 6</direccion>
+                <telefono>9373472350</telefono>
+            </empleado>
+            <empleado codigo = "empleado181">
+                <nombre>Sofia Nereida Coppel Perez</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>28</dia>
+                        <mes>05</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>30</dia>
+                        <mes>08</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 48, Colonia 20, Ciudad 52</direccion>
+                <telefono>1911173194</telefono>
+            </empleado>
+            <empleado codigo = "empleado182" jefe = "empleado153">
+                <nombre>Luis Daniel Perez Coppel</nombre>
+                <titulo>Ing. Industrial</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>21</dia>
+                        <mes>02</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>31</dia>
+                        <mes>07</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 19, Colonia 1, Ciudad 27</direccion>
+                <telefono>3476582825</telefono>
+            </empleado>
+            <empleado codigo = "empleado183">
+                <nombre>Javier Luis Lopez Mendoza</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>02</dia>
+                        <mes>12</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>08</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 13, Colonia 50, Ciudad 43</direccion>
+                <telefono>5010429202</telefono>
+            </empleado>
+            <empleado codigo = "empleado184">
+                <nombre>Maria Rebeca Perez Diaz</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>03</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>25</dia>
+                        <mes>02</mes>
+                        <año>2014</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 26, Colonia 9, Ciudad 15</direccion>
+                <telefono>5276617566</telefono>
+            </empleado>
+            <empleado codigo = "empleado185">
+                <nombre>Carolina Sofia Coppel Lopez</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>17</dia>
+                        <mes>11</mes>
+                        <año>2008</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>19</dia>
+                        <mes>05</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 29, Colonia 7, Ciudad 57</direccion>
+                <telefono>6273418209</telefono>
+            </empleado>
+            <empleado codigo = "empleado186">
+                <nombre>Zoila Maria Perez Lopez</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>13</dia>
+                        <mes>02</mes>
+                        <año>2017</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>02</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 82, Colonia 37, Ciudad 86</direccion>
+                <telefono>9106303424</telefono>
+            </empleado>
+            <empleado codigo = "empleado187" jefe = "empleado60">
+                <nombre>Carolina Alicia Diaz Mendoza</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>01</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>04</dia>
+                        <mes>07</mes>
+                        <año>2004</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 42, Colonia 17, Ciudad 88</direccion>
+                <telefono>9217181039</telefono>
+            </empleado>
+            <empleado codigo = "empleado188" jefe = "empleado153">
+                <nombre>Yessenia Zoila Garcia Garcia</nombre>
+                <titulo>Ing. Electrico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>06</dia>
+                        <mes>08</mes>
+                        <año>2011</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>03</dia>
+                        <mes>04</mes>
+                        <año>2023</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 28, Colonia 58, Ciudad 95</direccion>
+                <telefono>6567321806</telefono>
+            </empleado>
+            <empleado codigo = "empleado189">
+                <nombre>Antonio Luis Lopez Diaz</nombre>
+                <titulo>Ing. Civil</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>07</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>26</dia>
+                        <mes>03</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 78, Colonia 95, Ciudad 54</direccion>
+                <telefono>3518842642</telefono>
+            </empleado>
+            <empleado codigo = "empleado190">
+                <nombre>Daniel Luis Mendoza Urias</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>08</dia>
+                        <mes>10</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>14</dia>
+                        <mes>09</mes>
+                        <año>2012</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 74, Colonia 18, Ciudad 51</direccion>
+                <telefono>8130504367</telefono>
+            </empleado>
+            <empleado codigo = "empleado191">
+                <nombre>Nereida Maria Mendoza Urias</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>12</dia>
+                        <mes>07</mes>
+                        <año>2009</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>07</dia>
+                        <mes>09</mes>
+                        <año>2003</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 21, Colonia 90, Ciudad 53</direccion>
+                <telefono>6885173437</telefono>
+            </empleado>
+            <empleado codigo = "empleado192">
+                <nombre>Antonio Luis Perez Mendoza</nombre>
+                <titulo>Ing. Mecanica</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>16</dia>
+                        <mes>01</mes>
+                        <año>2001</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>23</dia>
+                        <mes>09</mes>
+                        <año>2013</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 30, Colonia 54, Ciudad 76</direccion>
+                <telefono>7998535177</telefono>
+            </empleado>
+            <empleado codigo = "empleado193">
+                <nombre>Nereida Rebeca Mendoza Perez</nombre>
+                <titulo>Ing. Sistemas</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>27</dia>
+                        <mes>11</mes>
+                        <año>2021</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>15</dia>
+                        <mes>03</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_contratacion>
+                <direccion>Calle 98, Colonia 22, Ciudad 75</direccion>
+                <telefono>6003730771</telefono>
+            </empleado>
+            <empleado codigo = "empleado194">
+                <nombre>Yessenia Rebeca Urias Lopez</nombre>
+                <titulo>Ing. Bioquimico</titulo>
+                <fecha_nacimiento>
+                    <fecha>
+                        <dia>09</dia>
+                        <mes>04</mes>
+                        <año>2018</año>
+                    </fecha>
+                </fecha_nacimiento>
+                <fecha_contratacion>
+                    <fecha>
+                        <dia>18</dia>
+                        <mes>05</mes>
+                        <año>2006</año>
+                    </fecha>
+                </fecha_contratacion>
+  
