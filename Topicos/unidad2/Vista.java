@@ -3,7 +3,6 @@ package unidad2;
 import java.awt.GridLayout;
 
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 import unidad2.proyecto1.JHint;
 import unidad2.proyecto2.JMultipleBox;
@@ -22,7 +21,7 @@ public class Vista extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(0, 2, 10, 10));    
-        add(new JHint("Estacion"));
+        // add(new JHint("Estacion"));
         add(new JMultipleBox());
         setVisible(true);
 

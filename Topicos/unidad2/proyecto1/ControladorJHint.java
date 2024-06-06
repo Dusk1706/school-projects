@@ -1,3 +1,14 @@
+/*
+ * Alumno: Dylan Michel Garcia Figueroa
+ * Numero de control: 21170331
+ * Materia: Topicos Avanzados de Programacion
+ * Unidad: 2
+ * Proyecto: Componentes
+ * Horario: 9:00 a 10:00
+ * Fecha: 11/04/2024
+ * Profesor: Dr. Clemente Garcia Gerardo
+ */
+
 package unidad2.proyecto1;
 
 import java.awt.event.ActionEvent;
@@ -52,7 +63,7 @@ public class ControladorJHint implements ActionListener, ComponentListener, KeyL
         }
 
         String texto = vista.getText();
-
+        System.out.println("Valor "+ vista.getText());
         if (texto.length() > 1) {
             texto = texto.substring(0, texto.length() - 1);
             vista.setText(texto);
@@ -87,6 +98,7 @@ public class ControladorJHint implements ActionListener, ComponentListener, KeyL
         if (!validarCaracter(caracter)) {
             return;
         }
+        System.out.println("Valor keytyped "+ vista.getText());
 
         String texto = vista.getText();
 

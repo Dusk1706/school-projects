@@ -1,3 +1,14 @@
+/*
+ * Alumno: Dylan Michel Garcia Figueroa
+ * Numero de control: 21170331
+ * Materia: Topicos Avanzados de Programacion
+ * Unidad: 2
+ * Proyecto: Componentes
+ * Horario: 9:00 a 10:00
+ * Fecha: 11/04/2024
+ * Profesor: Dr. Clemente Garcia Gerardo
+ */
+
 package unidad2.proyecto2;
 
 import java.awt.Color;
@@ -8,6 +19,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
 public class JMultipleBox extends JPanel {
@@ -16,6 +28,7 @@ public class JMultipleBox extends JPanel {
     private JButton btnNuevaCaja;
     
     private JPanel panelCaja;
+    private JScrollPane scroll;
     private JTextField [] cajas;
     private JButton [] btnsBorrar;
 
@@ -49,13 +62,16 @@ public class JMultipleBox extends JPanel {
 
         panelCaja = new JPanel();
         panelCaja.setLayout(null);
+        panelCaja.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+
+        scroll = new JScrollPane(panelCaja);
         
         add(rbtnCorreos);
         add(rbtnRfc);
         add(rbtnTelefonos);
         add(btnNuevaCaja);
         add(panelCaja);
-
+        add(scroll);
     }
 
     public void crearEscuchadores(ControladorJMultipleBox controlador) {
@@ -221,22 +237,18 @@ public class JMultipleBox extends JPanel {
         panelCaja.setBounds(x, y, ancho, alto);
         
 
-        int anchoPanelCaja = ancho;
         int alturaPanelCaja = alto;
-        
-        int porcentaje = 100 / cajas.length;
         
         for (int i = 0; i < cajas.length; i++) {
             x = 0;
-            y = getValorPorcentaje(alturaPanelCaja, (porcentaje * i));
-            ancho = getValorPorcentaje(anchoPanelCaja, 50);
-            alto = getValorPorcentaje(alturaPanelCaja, porcentaje - 3);
+            y = getValorPorcentaje(alturaPanelCaja, 10) * i;
+            ancho = getValorPorcentaje(anchoPanel, 40);
+            alto = getValorPorcentaje(alturaPanelCaja, 10);
             
             cajas[i].setBounds(x, y, ancho, alto);
             
-            x = getValorPorcentaje(anchoPanelCaja, 60);
-            ancho = getValorPorcentaje(anchoPanelCaja, 10);
-
+            ancho = getValorPorcentaje(anchoPanel, 20);
+            x = getValorPorcentaje(ancho, 70);
             btnsBorrar[i].setBounds(x, y, ancho, alto);
         }
     }
@@ -287,10 +299,6 @@ public class JMultipleBox extends JPanel {
 
     public JButton [] getBtnsBorrar() {
         return btnsBorrar;
-    }
-
-    public JTextField [] getCajas() {
-        return cajas;
     }
 
     public String [] getTextCajas() {

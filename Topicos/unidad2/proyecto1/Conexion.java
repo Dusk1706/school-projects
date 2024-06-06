@@ -1,3 +1,14 @@
+/*
+ * Alumno: Dylan Michel Garcia Figueroa
+ * Numero de control: 21170331
+ * Materia: Topicos Avanzados de Programacion
+ * Unidad: 2
+ * Proyecto: Componentes
+ * Horario: 9:00 a 10:00
+ * Fecha: 11/04/2024
+ * Profesor: Dr. Clemente Garcia Gerardo
+ */
+
 package unidad2.proyecto1;
 
 import java.sql.Connection;
@@ -11,9 +22,9 @@ public class Conexion {
   private Connection conn;
 
   public Conexion() {
-    String ip = "localhost";
+    // String ip = "localhost";
     
-    url = "jdbc:sqlserver://" + ip +";"+
+    url = "jdbc:sqlserver://localhost;"+
         "databaseName=Hints;" +
         "user=sa;" +
         "password=123;" +
