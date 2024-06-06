@@ -1,0 +1,29 @@
+*estilo a cuerpo de documento*/
+body
+{
+border: 1px solid blue;
+margin: 0 auto;
+max-width: 1024px;
+}
+/*estilo a cabecera de documento*/
+header
+{
+border: 1px solid blue;
+}
+/*estilo a menu de navegacion ubicado en cabecera*/
+header nav
+{
+text-align: center;
+}
+/*estilo a lista de menu de navegacion ubicado en cabecera*/
+header nav ul li
+{
+display: inline-block;
+}
+/*estilo caja de usuario*/
+#principal_usuario
+{
+width: 300px;
+margin: 0 auto;
+text-align: center;
+}

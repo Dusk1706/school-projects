@@ -1,0 +1,50 @@
+/* * {
+}
+Selector Universal: el asterisco
+selecciona todos los elementos en un
+documento*/
+* {
+    font-family:sans-serif;
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    }
+    .nav > li {
+    float:left;
+    }
+    .nav li a {
+    background:#18417E;
+    color:#FFFFFF;
+    display:block;
+    border:1px solid;
+    padding:10px 12px;
+    }
+    .nav li .flecha{
+    font-size: 9px;
+    padding-left: 6px;
+    display: none;
+    }
+    /*last-child: se utiliza para
+    seleccionar el ultimo elemento*/
+    .nav li a:not(:last-child) .flecha {
+    display: inline;
+    }
+    .nav li a:hover {
+    background:#0044AA;
+    }
+    .nav li {
+    position:relative;
+    }
+    .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    }
+    .nav li:hover > ul {
+    display:block;
+    }
+    .nav li ul li ul {
+    right:-140px;
+    top:0;
+    }

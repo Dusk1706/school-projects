@@ -1,0 +1,156 @@
+/*CSS Estilos Archivo index.html*/
+body {
+    background: lightgray;
+    margin: 0 auto;
+    max-width: 963px;
+    }
+    header {
+    background: lightgray;
+    }
+    header nav {
+    background: black;
+    border-radius: 5px;
+    padding: 1px;
+    }
+    header nav ul li {
+    color: gray;
+    display: inline-block;
+    font-size: 15pt;
+    margin: 0px 15px 0px 0px;
+    }
+    header nav ul li:hover {
+    background: rgba(222, 236, 234);
+    }
+    .logoseminario {
+    margin-top: -130px;
+    }
+    .fotoprincipal {
+    background: lightgray;
+    margin-top: 10px;
+    }
+    .fotoprincipal img {
+    width: 963px;
+    }
+    estilos.css 11/04/2024 09:33 a. m.
+    Page 1 of 3
+    42
+    43
+    44
+    45
+    46
+    47
+    48
+    49
+    50
+    51
+    52
+    53
+    54
+    55
+    56
+    57
+    58
+    59
+    60
+    61
+    62
+    63
+    64
+    65
+    66
+    67
+    68
+    69
+    70
+    71
+    72
+    73
+    74
+    75
+    76
+    77
+    78
+    79
+    80
+    81
+    82
+    .tresarticulos {
+    background: white;
+    margin-top: 10px;
+    text-align: center;
+    }
+    .tresarticulos article {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 30%;
+    text-align: center;
+    }
+    .tresarticulos button {
+    color: blue;
+    }
+    .tresarticulos .titulo01 {
+    font-size: 40;
+    font-weight: bold;
+    }
+    .tresarticulos .titulo02 {
+    font-size: 40;
+    font-weight: bold;
+    }
+    .botoneshearder {
+    float: right;
+    margin-right: 20px;
+    margin-top: -43px;
+    }
+    .botoneshearder button {
+    background: lightblue;
+    border: 0px;
+    border-radius: 5px;
+    padding: 3px 8px;
+    }
+    estilos.css 11/04/2024 09:33 a. m.
+    Page 2 of 3
+    83
+    84
+    85
+    86
+    87
+    88
+    89
+    90
+    91
+    92
+    93
+    94
+    95
+    96
+    97
+    98
+    99
+    100
+    101
+    102
+    103
+    104
+    105
+    106
+    .botoneshearder input {
+    border-radius: 5px;
+    height: 25px;
+    }
+    p{
+    color: gray;
+    text-align: justify;
+    }
+    .imagenredonda {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 300px;
+    }
+    footer {
+    color: gray;
+    background: black;
+    border-radius: 5px;
+    padding: 1px;
+    }

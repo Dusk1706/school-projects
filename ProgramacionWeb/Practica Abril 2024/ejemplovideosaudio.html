@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Videos en HTML5</title>
+<style>
+video
+{
+width: 200px;
+height: 112px;
+border:1px solid black;
+}
+.video-tres
+{
+display: inline-block;
+text-align: center;
+}
+p
+{
+font: 14px Arial;
+}
+</style>
+</head>
+<body>
+<!--div: divide un bloque en columnas-->
+<dir class="video-tres">
+<p>.mp4</p>
+<!--Video - Insertar contenido multimedia a un documento HTML-->
+<!--Poster - Permite usar una imagen como poster de inicio video-->
+<!--Controls - Muestra los controles standar de HTML5-->
+<video poster="imagenes/video.jpg" controls="">
+<!--Source - Proporcionar Video o Audio codificado en formatos
+diferentes para diferentes navegadores-->
+<source src="videos/Chrome_ImF.mp4" type="video/mp4; mp4a.40.2'"/>
+</video>
+</dir>
+<dir class="video-tres">
+<p>.webm</p>
+<video poster="imagenes/video.jpg" controls="">
+<source src="videos/Chrome_ImF.webm" type="video/webm"
+codecs="vp8, vorbis'" />
+</video>
+</dir>
+<!--<dir class="video-tres">
+<p>.ogv</p>
+<video poster="imagenes/video.jpg" controls="">
+<source src="videos/Chrome_ImF.ogv" type="video/ogg" codecs="theora,
+vorbis'" />
+</dir> -->
+<audio src="audios/musica.mp3" controls="">
+</audio>
+</body>
+</html>

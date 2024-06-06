@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Arrastrar y Soltar una Imagen</title>
+<style>
+#div1,#div2 {
+float: left;
+border: 5px solid navy;
+height: 410px;
+margin: 30px;
+padding: 20px;
+width: 100px;
+}
+</style>
+<!--Funciones JavaScript-->
+<!--allowDrop:Indica si el espectador puede aceptar datos que el usuario
+arrastra sobre él.-->
+<!--drop: Procesa la acción de soltar-->
+<!--dataTransfer.getData(): método recupera datos de arrastre-->
+<!--dataTransfer.setData(): especifica el tipo de datos y el valor del dato
+arrastrado-->
+<script>
+function drop(ev){
+ev.preventDefault();
+var data=ev.dataTransfer.getData("text");
+ev.target.appendChild(document.getElementById(data));
+}
+function allowDrop(ev){
+//desactivamos el evento que rechaza el objeto
+ev.preventDefault();
+}
+//drag:función de arrastre.
+function drag(ev){
+ev.dataTransfer.setData("text",ev.target.id);
+}
+</script>
+</head>
+<body><center>
+<h2>Tomar, Arrastrar & Soltar</h2></center>
+EjemploScriptArrastrarSoltar.html 17/04/2024 10:24 a. m.
+Page 1 of 2
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+<!--ondragover: se activa cuando un elemento o selección de
+texto está siendo arrastrado sobre un destino de colocación válida-->
+<!--allowDrop:Indica si el espectador puede aceptar datos que el usuario
+arrastra sobre él.-->
+<!--draggable:Puede tener los siguientes valores : true , indica que el
+elemento puede ser arrastrado. false-->
+<!--ondragstart: proceso en el que pulsamos sobre el texto deseado para
+arrastrarlo y soltarlo en una ubicación diferente.-->
+<!--ondrop: este es cancelable, si se cancela, no se realiza la acción
+predeterminada-->
+<!--drop: Procesa la acción de soltar-->
+<div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
+<img src="img/Logo-TecNM-2017.png" height="80" width="110"
+draggable="true" ondragstart="drag(event)" id="arrastre1">
+<img src="img/LOGO_TEC_PNG_OK.png" height="110" width="110"
+draggable="true" ondragstart="drag(event)" id="arrastre2">
+<img src="img/LogoBronco2023.png" height="100" width="100"
+draggable="true" ondragstart="drag(event)" id="arrastre3">
+<img src="img/LOGO_GOOGLE.png" height="90" width="90"
+draggable="true" ondragstart="drag(event)" id="arrastre4">
+</div>
+<div id="div2" ondragover="allowDrop(event)"ondrop="drop(event)">
+</div>
+</body>
+</html>
