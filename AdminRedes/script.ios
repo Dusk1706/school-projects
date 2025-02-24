@@ -1,0 +1,13 @@
+! Servidor web 1
+ip dhcp excluded-address 200.1.1.1 200.1.1.2 
+ ip dhcp pool LAN_POOL_SERVIDOR
+ network 200.1.1.0 255.255.255.0
+ default-router 200.1.1.1
+ dns-server 8.8.8.8
+
+! Servidor web 2
+ip dhcp excluded-address 200.2.2.1 200.2.2.2 
+ ip dhcp pool LAN_POOL_SERVIDOR
+ network 200.2.2.0 255.255.255.0
+ default-router 200.2.2.1
+ dns-server 8.8.8.8

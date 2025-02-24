@@ -1,0 +1,68 @@
+! Router R1
+enable
+configure terminal
+
+! Configuración de interfaces
+interface GigabitEthernet0/0/0
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+
+interface Serial0/1/0
+ip address 10.0.0.1 255.255.255.252
+no shutdown
+
+! Configuración de rutas
+ip route 192.168.20.0 255.255.255.0 10.0.0.2
+ip route 192.168.30.0 255.255.255.0 10.0.0.2
+
+! ACL Extendida
+access-list 100 deny ip 192.168.10.0 0.0.0.255 192.168.30.4 0.0.0.0 
+access-list 100 permit ip 192.168.10.0 0.0.0.255 any
+
+interface GigabitEthernet0/0/0
+    ip access-group 100 in
+
+! Router R2
+enable
+configure terminal
+
+! Configuración de interfaces
+interface GigabitEthernet0/0/0
+ip address 192.168.20.1 255.255.255.0
+no shutdown
+
+interface Serial0/1/0
+ip address 10.0.0.5 255.255.255.252
+no shutdown
+
+! Configuración de rutas
+ip route 192.168.10.0 255.255.255.0 10.0.0.6
+ip route 192.168.30.0 255.255.255.0 10.0.0.6
+
+! Router R3
+enable
+configure terminal
+
+! Configuración de interfaces
+interface GigabitEthernet0/0/0
+ip address 192.168.30.1 255.255.255.0
+no shutdown
+
+interface Serial0/1/0
+ip address 10.0.0.2 255.255.255.252
+no shutdown
+
+interface Serial0/1/1
+ip address 10.0.0.6 255.255.255.252
+no shutdown
+
+! Configuración de rutas
+ip route 192.168.10.0 255.255.255.0 10.0.0.1
+ip route 192.168.20.0 255.255.255.0 10.0.0.5
+
+! ACL Estandar
+access-list 1 deny 192.168.20.0 0.0.0.255
+access-list 1 permit any
+
+interface GigabitEthernet0/0/0
+ip access-group 1 out

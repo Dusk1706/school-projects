@@ -1,0 +1,23 @@
+! Show
+show ip route
+show ip int briefcase
+show running-config
+
+! Ruteo dinamico
+! Rip
+! En cada router poner las redes que conoce directamente C
+router rip
+version 2
+network 192.168.1.0 red que conoce directamente C
+no auto-summary
+
+! Dhcp
+ip dhcp excluded-address 192.168.6.1 192.168.6.2
+ip dhcp pool LAN_POOL_SERVIDOR
+ network 192.168.6.0 255.255.255.0
+ default-router 192.168.6.2
+ dns-server 8.8.8.8
+
+
+
+

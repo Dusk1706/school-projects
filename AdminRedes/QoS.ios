@@ -1,0 +1,64 @@
+! Router 1
+enable
+configure terminal
+hostname R1
+! 
+interface Serial0/3/0
+ ip address 10.0.0.1 255.255.255.252
+ clock rate 64000
+ no shut
+!
+exit
+!
+interface Giga0/0
+ ip address 192.168.1.254 255.255.255.0
+ no shut
+!
+route rip
+version 2
+network 10.0.0.0
+network 192.168.1.0
+!
+! Configuración de QoS
+class-map match-all VOICE_VIDEO
+ match protocol rtp
+class-map match-all WEB
+ match protocol http
+ match protocol https
+class-map match-all MAIL
+ match protocol smtp
+ match protocol pop3
+! Definir el policy-map
+policy-map TRAFFIC_POLICY
+ class VOICE_VIDEO
+  bandwidth 20480
+  set dscp ef
+ class WEB
+  priority percent 3
+ class MAIL
+  bandwidth 10240
+!
+interface se0/3/0
+ service-policy output TRAFFIC_POLICY
+
+! Router 2
+enable
+configure terminal
+hostname R2
+!
+interface Serial0/3/0
+ ip address 10.0.0.2 255.255.255.252
+ no shut
+!
+exit
+!
+route rip
+version 2
+network 10.0.0.0
+network 172.16.0.0
+!
+exit
+!
+int g0/0
+ip add 172.16.255.254 255.255.0.0
+no shut
